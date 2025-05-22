@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+pushd pack
+
 packwiz mr add "Harvest with ease" -y
 packwiz mr add "Brainier Bees" -y
 packwiz mr add "Explosive Enhancement" -y
@@ -174,3 +176,5 @@ packwiz mr add "Mod Menu" -y
 packwiz mr add "Villager Names" -y
 packwiz mr add "Separated Leaves" -y
 packwiz mr add "Pocketwatch" -y
+
+popd
