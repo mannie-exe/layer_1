@@ -1,0 +1,13 @@
+name = "Pocketwatch"
+filename = "pocketwatch-1.2.0+1.21.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/yRNhk5qH/versions/MYqWuISM/pocketwatch-1.2.0%2B1.21.jar"
+hash-format = "sha512"
+hash = "23ca93a44733a63d55e2c40fbdacda54942d0caaa4327b74046accda1a1f76eb9c1aea481a907bc0ede174d16052c6b761b6dd3e60e7b4f3d06dffb80d2a71ee"
+
+[update]
+[update.modrinth]
+mod-id = "yRNhk5qH"
+version = "MYqWuISM"

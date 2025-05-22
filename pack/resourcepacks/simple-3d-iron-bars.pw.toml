@@ -1,0 +1,13 @@
+name = "Simple 3D Iron Bars"
+filename = "simple-3d-iron-bars.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/p5Kdm58p/versions/harPhc3X/simple-3d-iron-bars.zip"
+hash-format = "sha512"
+hash = "8e27b80d57cc3cf679cb48ed2c2dd6debd06bed94af4dfef1cd6dc15e671e545f8c8542250857d2f8c1157ede82639975ac12f64e53baae86ae83f4f46553b46"
+
+[update]
+[update.modrinth]
+mod-id = "p5Kdm58p"
+version = "harPhc3X"

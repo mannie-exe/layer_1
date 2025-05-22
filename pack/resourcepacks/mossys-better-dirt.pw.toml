@@ -1,0 +1,13 @@
+name = "Mossy's Better Dirt"
+filename = "Mossy's_Better_Dirt_1.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/PY1n16hW/versions/9ceym53S/Mossy%27s_Better_Dirt_1.0.zip"
+hash-format = "sha512"
+hash = "aa61ed9f8c8e9a4465280388d6dec6aa1fa5e7523d5be72e0e65ece1f7fc0ffdde1ea0c4d2fca0ac98573c7ea6be164a599b09474b09cbf77dd683bd168a1c99"
+
+[update]
+[update.modrinth]
+mod-id = "PY1n16hW"
+version = "9ceym53S"

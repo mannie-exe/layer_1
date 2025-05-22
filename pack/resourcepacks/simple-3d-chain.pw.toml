@@ -1,0 +1,13 @@
+name = "Simple 3D Chain"
+filename = "simple-3d-chain.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZKeBoQDj/versions/Q74T275O/simple-3d-chain.zip"
+hash-format = "sha512"
+hash = "8076761a2bc056b32d725ec25cb0ad2f0c68947924ec24a8e197d2c07450eceae64a069f233a0832b2803a27baa80e816f435f5514b234c194707f46f6ece129"
+
+[update]
+[update.modrinth]
+mod-id = "ZKeBoQDj"
+version = "Q74T275O"

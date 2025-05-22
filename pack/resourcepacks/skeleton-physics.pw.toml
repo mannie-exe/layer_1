@@ -1,0 +1,13 @@
+name = "Skeleton Physics"
+filename = "Skeleton Physics.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/l9VrawNM/versions/4fznnwg6/Skeleton%20Physics.zip"
+hash-format = "sha512"
+hash = "a6a24edc064d1f0694bd72661120e49423989595d94070136886643cfcf0b362a86005993a5a579e485bd668fc6e7516718acbc18c784900f88a987b13c3d6df"
+
+[update]
+[update.modrinth]
+mod-id = "l9VrawNM"
+version = "4fznnwg6"

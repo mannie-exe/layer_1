@@ -1,0 +1,13 @@
+name = "Beautified Chat [Server]"
+filename = "beautifiedchatserver-1.21.1-2.7.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/C00Y5Ci9/versions/zXdQgCC8/beautifiedchatserver-1.21.1-2.7.jar"
+hash-format = "sha512"
+hash = "ead5d8957834ce65f52a4f01191e2119daf216685c8ac5f339a3cf7f3dd02cc0fa1985c246a75596d57b8f31920ac2e9662fac54982be56dc3a6e135964d2129"
+
+[update]
+[update.modrinth]
+mod-id = "C00Y5Ci9"
+version = "zXdQgCC8"

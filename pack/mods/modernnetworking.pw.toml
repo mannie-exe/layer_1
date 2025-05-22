@@ -1,0 +1,13 @@
+name = "Modern Networking"
+filename = "modernnetworking-fabric-1.1.5+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yMou0v20/versions/kL9sqgta/modernnetworking-fabric-1.1.5%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "9781e948323cd81f90a288dc53890cb8b983eb1b18919e2ca6463b772eccbef6d79b019aa793b6f8cdb0799d701ed4ef54229608f6d61763acec5ab6ff7e6cb0"
+
+[update]
+[update.modrinth]
+mod-id = "yMou0v20"
+version = "kL9sqgta"

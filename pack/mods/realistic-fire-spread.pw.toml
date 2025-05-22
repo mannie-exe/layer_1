@@ -1,0 +1,13 @@
+name = "Realistic Fire Spread"
+filename = "realisticfirespread-1.21-r1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7JCIgcfe/versions/4DKYvTZb/realisticfirespread-1.21-r1.jar"
+hash-format = "sha512"
+hash = "06184c7fc9d7086792ee4150beeb438be4589c7e52a04306dfc40319ae341c5194fe48cf241f730c50f9ed90fa98c1a5c9780e32147d7e79921e01ffe00bf0a0"
+
+[update]
+[update.modrinth]
+mod-id = "7JCIgcfe"
+version = "4DKYvTZb"

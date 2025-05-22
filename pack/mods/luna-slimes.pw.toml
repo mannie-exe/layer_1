@@ -1,0 +1,13 @@
+name = "Luna Slimes"
+filename = "LunaSlimes-1.8.4-Fabric+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/29SwBNOk/versions/LXaTrttm/LunaSlimes-1.8.4-Fabric%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "dccf07af450a90f9ca2e12ab8932ed330dd11f6bfac50b88df7fb98a215b0ac7a716470bec4bb0ef788442ce5923809a71f5ce03aca1f900e4eabeb02b7570fd"
+
+[update]
+[update.modrinth]
+mod-id = "29SwBNOk"
+version = "LXaTrttm"

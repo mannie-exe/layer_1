@@ -1,0 +1,13 @@
+name = "EGG textures from version 1.21.5"
+filename = "EGG textures 1.21.5 (25w08a).zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/1hqmU2C9/versions/MzSAnWtS/EGG%20textures%201.21.5%20%2825w08a%29.zip"
+hash-format = "sha512"
+hash = "dfc81f72ce4aeae2da943e5d1760349e2349b6a1949b6351ebc30a829cca6572c97116992c35a0f1783e0001c7304de693d3c989d713d5a354e1dc86f73a52a1"
+
+[update]
+[update.modrinth]
+mod-id = "1hqmU2C9"
+version = "MzSAnWtS"

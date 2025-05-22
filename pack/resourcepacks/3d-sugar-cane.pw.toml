@@ -1,0 +1,13 @@
+name = "3D Sugar Cane"
+filename = "3D Sugar Cane.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/pT71mSWA/versions/VZS6efwo/3D%20Sugar%20Cane.zip"
+hash-format = "sha512"
+hash = "41f336d859cc92e9754f3ca29a9d35577c5adb0ec9f86d4cc0ded6df18b2c4e3a983694263b59e357e25269ecf50619164317363a136b1cc1c2edc5b4d339d5c"
+
+[update]
+[update.modrinth]
+mod-id = "pT71mSWA"
+version = "VZS6efwo"

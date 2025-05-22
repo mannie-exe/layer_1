@@ -1,0 +1,13 @@
+name = "TooltipRareness"
+filename = "tooltiprareness-1.0.9.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/4jBWaiuq/versions/At2wspOJ/tooltiprareness-1.0.9.jar"
+hash-format = "sha512"
+hash = "6256d52ed2ee3226fa9f5fc4797589619bf8cfc27ca5108f8287df6867d74f870e67dd2f432f005affa66e0fe8bc8b46bf8005e307a6229ca02fd1001f8c5a2c"
+
+[update]
+[update.modrinth]
+mod-id = "4jBWaiuq"
+version = "At2wspOJ"

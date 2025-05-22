@@ -1,0 +1,13 @@
+name = "Larion World Generation"
+filename = "larion-fabric-1.21.1-4.3.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/rctNbbuL/versions/ojlLh0uS/larion-fabric-1.21.1-4.3.0.jar"
+hash-format = "sha512"
+hash = "7731ac713d6ac880a815b71b3407944bab7249b72d8da4a39378ebb24fb62745007922ae9c24faa77bed39fd7cb8a5f89e73740f21b0ff4f2e7b69b9888e22ac"
+
+[update]
+[update.modrinth]
+mod-id = "rctNbbuL"
+version = "ojlLh0uS"

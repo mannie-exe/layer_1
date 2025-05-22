@@ -1,0 +1,13 @@
+name = "Redstone Pen"
+filename = "redstonepen-1.21.1-fabric-1.11.43.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DwE83ioX/versions/JcLfGDLR/redstonepen-1.21.1-fabric-1.11.43.jar"
+hash-format = "sha512"
+hash = "306f28141871330802048b3c03b0e44a7f542e75ee7142fe05cbdcc955eeb28ac2d91abdbd7344359a7f412ca5d30ca0687952fa6ce0c97c36c6e58601eed529"
+
+[update]
+[update.modrinth]
+mod-id = "DwE83ioX"
+version = "JcLfGDLR"

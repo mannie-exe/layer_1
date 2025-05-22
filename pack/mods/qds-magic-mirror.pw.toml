@@ -1,0 +1,13 @@
+name = "Magic mirror"
+filename = "magicmirror-1.21-1.21.1+1.2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1d2CrxHN/versions/Ixtf7Njf/magicmirror-1.21-1.21.1%2B1.2.0.jar"
+hash-format = "sha512"
+hash = "d07096ef06abd1018dd7f9019f49ca1cf2c45e621cb960ee9d2b159d1f16c3a6b18cee3adbb82e2a12ec7354fbdb1e8984c15795d2e17e444052fa896e61a4d9"
+
+[update]
+[update.modrinth]
+mod-id = "1d2CrxHN"
+version = "Ixtf7Njf"

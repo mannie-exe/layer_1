@@ -1,0 +1,13 @@
+name = "Northern Compass"
+filename = "NorthernCompass-Fabric-1.21-1.1.3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/5QyCeANZ/versions/b4TD1e3S/NorthernCompass-Fabric-1.21-1.1.3.jar"
+hash-format = "sha512"
+hash = "4de186fc45ccb6656dd44370801415fb27ceb0e8f9147218891930e965f11f3507bd86e6712fba1af8e8570e4006cf69ba77698f1d27d08cca8f60bbbf6b83fd"
+
+[update]
+[update.modrinth]
+mod-id = "5QyCeANZ"
+version = "b4TD1e3S"

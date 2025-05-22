@@ -1,0 +1,13 @@
+name = "Omni-Man Totem"
+filename = "Omni-Man Totem V1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/t4800ciJ/versions/REDFa93c/Omni-Man%20Totem%20V1.zip"
+hash-format = "sha512"
+hash = "ded73d7f911a9321a9fd49af4f15cb8d9e93dfc9ef0f6e5b8784600465150d1adaef0c425ce595a969d0a3bdd8968b2f5d61ee4b1cb90740732f9f88cf0e8849"
+
+[update]
+[update.modrinth]
+mod-id = "t4800ciJ"
+version = "REDFa93c"

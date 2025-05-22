@@ -1,0 +1,13 @@
+name = "Undopia 3D Rails"
+filename = "Undopia_3D_Rails_1.21_v.1.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/libxdY2I/versions/uVPEONOd/Undopia_3D_Rails_1.21_v.1.0.zip"
+hash-format = "sha512"
+hash = "3cb515c6df25a0a0312b8e374011f2a40dd89886758784027bdd6259ccf8f399437158c120e4d90d099cc315a34403511a5c42260d59dcc41260ffa6516a3a7b"
+
+[update]
+[update.modrinth]
+mod-id = "libxdY2I"
+version = "uVPEONOd"

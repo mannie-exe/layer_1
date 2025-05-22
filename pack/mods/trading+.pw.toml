@@ -1,0 +1,13 @@
+name = "Villager Trading Plus"
+filename = "villager-trading-plus-1.1+1.21.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/fRhq4ueb/versions/jP76V1p6/villager-trading-plus-1.1%2B1.21.jar"
+hash-format = "sha512"
+hash = "565628ec8e465b5f6eae9d4ac589a4bf32a388cf64100536e50e06ae9df377c54f66d50cd12f1b65058ca9a4f47e971c318d2f2f999dd15e217b35e7603c741f"
+
+[update]
+[update.modrinth]
+mod-id = "fRhq4ueb"
+version = "jP76V1p6"
