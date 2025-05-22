@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "add.sh"
-hash = "331c5e51ca781cdedacbf3c67d129a48e63b269dcdc70e340e48ecb4aa1ee774"
-
-[[files]]
 file = "config/openloader/data/william-wythers-overhauled-overworld-(datapack).pw.toml"
 hash = "0cce2a4e6b421fc1bde74792d945afbf0f6ef4087328206d971052397b1fd8a6"
 metafile = true
@@ -222,6 +218,11 @@ metafile = true
 [[files]]
 file = "mods/ding.pw.toml"
 hash = "c82b2e2f2d2392fbb45a75f8e555200abceee13da43367ada2c5f56cf45c2cab"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "447ec530620e3c0da62316cb3358e43c15132084aab22ba992fefac199ca92a9"
 metafile = true
 
 [[files]]
@@ -755,6 +756,11 @@ hash = "4cc43a9b1a71ca0ee121a754dd070f52b963d8fd47ed733886638a90ec0be7cd"
 metafile = true
 
 [[files]]
+file = "mods/scorched.pw.toml"
+hash = "ee9f80e2894babfd878d8188697b99fc13a3c5220d5b630cec1f32c8e3aadd36"
+metafile = true
+
+[[files]]
 file = "mods/scribble.pw.toml"
 hash = "717906f148da2e135fa8a6b0bb1a206d5bf2369bffbb0c5f0878346eca5e7521"
 metafile = true
@@ -795,6 +801,11 @@ hash = "456b20442833ec434ba2a6dc1012a443f795787bf527cd72e91520e5ba1d3bcb"
 metafile = true
 
 [[files]]
+file = "mods/spawn-animations.pw.toml"
+hash = "658f2f78263d779d2c988d548b09af015c4ef8e51819acf5f18bb1bfd1c5ee82"
+metafile = true
+
+[[files]]
 file = "mods/stack-to-nearby-chests.pw.toml"
 hash = "6e06c71124bd06e1e489c9ad5034046a29344eddb599058d7c4cb2e5703bad1a"
 metafile = true
@@ -832,6 +843,21 @@ metafile = true
 [[files]]
 file = "mods/tax-free-levels.pw.toml"
 hash = "fcd92853a728b92cc82d6de0adcb42b0463c6825069e30a07c707fc571dc119a"
+metafile = true
+
+[[files]]
+file = "mods/tectonic.pw.toml"
+hash = "257596cef0449db3c18e4821b6aaaa5a9dc3f21a885eea88ecea7d740e61073d"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
+file = "mods/tidal-towns.pw.toml"
+hash = "0cbfee517ef794590c79f407c060a42f9719e8533f730411761d3d429463af03"
 metafile = true
 
 [[files]]
@@ -925,6 +951,10 @@ hash = "2a72d78e734a09f3034fa77d850cc252cad1bc2b146754491e4792959d4cff96"
 metafile = true
 
 [[files]]
+file = "options.txt"
+hash = "a1a5121436084c8838801d9f1aed569a21e44517687b41c111e338a70d762de6"
+
+[[files]]
 file = "resourcepacks/3d-ladders.pw.toml"
 hash = "41b824d57c58ed52a7c63b162e036e79a02cae78ce551b31423ccf2eb752b110"
 metafile = true
@@ -1001,10 +1031,14 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/skeleton-physics.pw.toml"
-hash = "c4a38db8235e00b2e7b1e1aaaf692be11ebcb44de46996e0b8dce413b7158e0c"
+hash = "e229170750258fc6df9f20926af597ce4a689810aaa0676f57841eb68965aa31"
 metafile = true
 
 [[files]]
 file = "resourcepacks/undopia-3d-rails.pw.toml"
 hash = "1c21bf8fb32205a0f9c8bf6bdfb1643c249aa4da08921bd34fae61ca32bea910"
 metafile = true
+
+[[files]]
+file = "shaderpacks/BSL_v8.4.02.2.zip.txt"
+hash = "1b3b54d88b70812336ce3b5b7b3d57b92b053283443b02f6edc1517bcdf42b41"
