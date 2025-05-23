@@ -1,0 +1,13 @@
+name = "Towering Tepuis"
+filename = "Towering Tepuis v1.1.1.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kmhI7qev/versions/RNhodiVS/Towering%20Tepuis%20v1.1.1.zip"
+hash-format = "sha512"
+hash = "bd9e7796e344c3463fcd060a5c7fbae6d73d224b0138c7c8c004459b2a5a01890baadefc9212d077df9f505bc1d8b239bbcc9e8903eef9986947f8c411c9cf68"
+
+[update]
+[update.modrinth]
+mod-id = "kmhI7qev"
+version = "RNhodiVS"

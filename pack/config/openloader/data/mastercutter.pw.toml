@@ -1,0 +1,13 @@
+name = "MasterCutter"
+filename = "MasterCutter+v1.3.1(mc-1.21).zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DuUMFIfX/versions/tBxP2OTe/MasterCutter%2Bv1.3.1%28mc-1.21%29.zip"
+hash-format = "sha512"
+hash = "c7780e39d5a0b98ccf220a0114788b19004efbb1ca63af85b29b97d8aa3da5d591cb7a3228025070424605ec8beefc58c32b8a10a96d144d2cb13a38d3e7ce60"
+
+[update]
+[update.modrinth]
+mod-id = "DuUMFIfX"
+version = "tBxP2OTe"

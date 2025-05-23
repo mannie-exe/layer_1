@@ -1,0 +1,13 @@
+name = "Navigable Rivers"
+filename = "Navigable Rivers v1.3.1.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3WdnBc3t/versions/eoBYm724/Navigable%20Rivers%20v1.3.1.zip"
+hash-format = "sha512"
+hash = "ef27d0b21a7e2996a263532f01e28693fc9921e82f10b2ddcbcd6586f89bd8d575a7819a881eef650123c912939f5938b3da6fa13c0e51f694cb1ba46aa34657"
+
+[update]
+[update.modrinth]
+mod-id = "3WdnBc3t"
+version = "eoBYm724"

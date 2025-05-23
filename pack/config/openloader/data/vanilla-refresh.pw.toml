@@ -1,0 +1,13 @@
+name = "Vanilla Refresh"
+filename = "vanilla-refresh-1.4.26_1.21.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gWO6Zqey/versions/OMMCGlwo/vanilla-refresh-1.4.26_1.21.zip"
+hash-format = "sha512"
+hash = "c29a8f19ef9fcc40bf47e2682651ece7fb7e296085dbd86827c593f595e9855cabd78cc5d3798792f974a3ca80419ab9e6474c2201faee1255e7de41cee8be61"
+
+[update]
+[update.modrinth]
+mod-id = "gWO6Zqey"
+version = "OMMCGlwo"
