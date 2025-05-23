@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 if [ ! -f "pack/pack.toml" ]; then
   echo "‼️ Pack file not found: pack/pack.toml"
   exit 1

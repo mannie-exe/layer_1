@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 POSSIBLE_MAKES=(
   "client"
   "server"
