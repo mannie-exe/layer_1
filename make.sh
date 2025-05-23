@@ -3,6 +3,7 @@
 set -e
 
 POSSIBLE_MAKES=(
+  "clean"
   "client"
   "server"
   "pack"
@@ -45,24 +46,50 @@ if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
   fi
 fi
 
-if [ "$MAKE" = "server" ] || [ "$MAKE" = "all" ]; then
-  pushd dist/server >/dev/null
+function clean() {
+  if [ "$1" != "client" ] && [ "$1" != "server" ]; then
+    echo "‼️ Invalid side: $1"
+    exit 1
+  fi
 
-  java -jar ../../installer/packwiz-installer-bootstrap.jar \
-    --bootstrap-main-jar ../../installer/packwiz-installer.jar \
-    -g -s server \
-    "../../pack/pack.toml"
+  find dist/$1 -mindepth 1 \
+    ! -name '.gitkeep' \
+    -exec rm -rf {} \
+    +
+}
 
-  popd >/dev/null
+# Handle server build
+if [ "$MAKE" = "server" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
+
+  echo "🧼 Cleaning server build"
+  clean server
+
+  if [ "$MAKE" = "server" ] || [ "$MAKE" = "all" ]; then
+    pushd dist/server >/dev/null
+
+    java -jar ../../installer/packwiz-installer-bootstrap.jar \
+      --bootstrap-main-jar ../../installer/packwiz-installer.jar \
+      -g -s server \
+      "../../pack/pack.toml"
+
+    popd >/dev/null
+  fi
 fi
 
-if [ "$MAKE" = "client" ] || [ "$MAKE" = "all" ]; then
-  pushd dist/client >/dev/null
+# Handle client build
+if [ "$MAKE" = "client" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
 
-  java -jar ../../installer/packwiz-installer-bootstrap.jar \
-    --bootstrap-main-jar ../../installer/packwiz-installer.jar \
-    -g -s both \
-    "../../pack/pack.toml"
+  echo "🧼 Cleaning client build"
+  clean client
 
-  popd >/dev/null
+  if [ "$MAKE" = "client" ] || [ "$MAKE" = "all" ]; then
+    pushd dist/client >/dev/null
+
+    java -jar ../../installer/packwiz-installer-bootstrap.jar \
+      --bootstrap-main-jar ../../installer/packwiz-installer.jar \
+      -g -s both \
+      "../../pack/pack.toml"
+
+    popd >/dev/null
+  fi
 fi
