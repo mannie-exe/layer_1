@@ -38,7 +38,11 @@ hash = "8750f3be634c69a2203e0209c8cdef780239d9c04df24e7da1ca16deefa785b6"
 
 [[files]]
 file = "config/sodiumdynamiclights-client.toml"
-hash = "001e45df23122651b3645821df31cf3ada9de4fa1bf8a75c377d45169c124fb2"
+hash = "cdbf282cccfdc3ab6ad9873d5378893d7b14ade20cb4249ae1c369131383b5e5"
+
+[[files]]
+file = "config/supplementaries-client.json"
+hash = "d32547dd9c27b8e38ab3cfee33a057f1daaf61b303ffc1cf3ace4816282396fc"
 
 [[files]]
 file = "config/voidtotem.toml"
@@ -102,11 +106,6 @@ metafile = true
 [[files]]
 file = "mods/aurae.pw.toml"
 hash = "000b5ebd56226ec46fe8c62a49549e66c1bcb7cd2c8d78463a413358c4b8f3e5"
-metafile = true
-
-[[files]]
-file = "mods/axiom.pw.toml"
-hash = "54cdfb1f1a25778e39c1cf2eef805073764a7af6a179eef2f1ac021d1b36fc0b"
 metafile = true
 
 [[files]]
@@ -1181,7 +1180,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "b27b91ec5d52fbc4115ba43ee1b76201ac5ba152636e01421e4a87e556e8ad2a"
+hash = "316d1e29027acf23fef04161417050b0d7c25e2a95c36161b1cda2425cddc02e"
 
 [[files]]
 file = "resourcepacks/3d-crops.pw.toml"
