@@ -2,8 +2,11 @@
 .DS_Store
 Thumbs.db
 
-# Exclude exported CurseForge zip files
+# packwiz-installer
+installer/installer.jar
+
+# CurseForge zip files
 *.zip
 
-# Exclude exported Modrinth modpacks
+# Modrinth modpacks
 *.mrpack
