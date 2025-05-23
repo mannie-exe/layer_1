@@ -53,6 +53,15 @@ function clean() {
   fi
 
   find dist/$1 -mindepth 1 \
+    ! -name '.gitkeep' | read
+
+  if [ -z "$?" ]; then
+    return
+  fi
+
+  echo "🧼 Cleaning $1 build"
+
+  find dist/$1 -mindepth 1 \
     ! -name '.gitkeep' \
     -exec rm -rf {} \
     +
@@ -61,7 +70,6 @@ function clean() {
 # Handle server build
 if [ "$MAKE" = "server" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
 
-  echo "🧼 Cleaning server build"
   clean server
 
   if [ "$MAKE" = "server" ] || [ "$MAKE" = "all" ]; then
