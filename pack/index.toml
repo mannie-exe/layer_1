@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "98f6312d6847b75c6ceadc9d32410099bfc3ea44cfff04b199465a83c2ac9f26"
+
+[[files]]
+file = "config/hardcorerevival-common.toml"
+hash = "e07d125263b95e20868b4cdea73db57f6a4cbcb9d45bf8b6272624b6f951e5d9"
+
+[[files]]
 file = "config/iris.properties"
 hash = "07091249923fe423ad7e5e597146bc15f426979d8a71890919f34b526309e529"
 
@@ -108,6 +116,10 @@ metafile = true
 file = "config/openloader/data/william-wythers-overhauled-overworld-(datapack).pw.toml"
 hash = "0cce2a4e6b421fc1bde74792d945afbf0f6ef4087328206d971052397b1fd8a6"
 metafile = true
+
+[[files]]
+file = "config/voidtotem.toml"
+hash = "e4765c98cb8ea31c213456181114f65c97d21e6797a7e9a124d2734df3e43663"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
