@@ -932,11 +932,6 @@ hash = "fcd92853a728b92cc82d6de0adcb42b0463c6825069e30a07c707fc571dc119a"
 metafile = true
 
 [[files]]
-file = "mods/tidal-waves.pw.toml"
-hash = "c3eeb965a91dc6d3f00e645364faa34fd29f04f8483c78ad40fab98c578bd195"
-metafile = true
-
-[[files]]
 file = "mods/tiny-item-animations.pw.toml"
 hash = "d7655654c6b8fc819f2a01a4b50bb8b133efb1b5da88394b4af5581599a34a5e"
 metafile = true
@@ -1109,6 +1104,10 @@ metafile = true
 file = "resourcepacks/undopia-3d-rails.pw.toml"
 hash = "1c21bf8fb32205a0f9c8bf6bdfb1643c249aa4da08921bd34fae61ca32bea910"
 metafile = true
+
+[[files]]
+file = "shaderpacks/BSL_v10.0.zip.txt"
+hash = "abab9000c6b0e4837edf3552adf1e8970c92c1233c9de8feaef531585c3f3902"
 
 [[files]]
 file = "shaderpacks/bsl-shaders.pw.toml"
