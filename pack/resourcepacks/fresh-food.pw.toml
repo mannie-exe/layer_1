@@ -1,0 +1,13 @@
+name = "Fresh Food"
+filename = "Fresh Food 1.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/UoLAbzII/versions/MhXgBda0/Fresh%20Food%201.1.zip"
+hash-format = "sha512"
+hash = "5a2dd651211f4589bbbd67b8f1427bdd08722b1368c8d2092c9ab4216d121054fd76ab8b8f3cc18c245b24b945410e1f0a8e37870cfba078c441b3f16a55bad4"
+
+[update]
+[update.modrinth]
+mod-id = "UoLAbzII"
+version = "MhXgBda0"

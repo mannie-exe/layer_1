@@ -1,0 +1,13 @@
+name = "Actually 3D Stuff"
+filename = "Actually 3D Stuff.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/405SacPR/versions/eaRsJydS/Actually%203D%20Stuff.zip"
+hash-format = "sha512"
+hash = "3bed3552d840ab9db8a3b0e4b2a0fa30669bb0941a6ff151e01890a4e00df4cd06d72fc077837895d9c5552452a3eda747685604613b035fda8d1780c1bc28a3"
+
+[update]
+[update.modrinth]
+mod-id = "405SacPR"
+version = "eaRsJydS"
