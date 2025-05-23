@@ -1,0 +1,13 @@
+name = "Loading Backgrounds - Oceans"
+filename = "loadingbackgrounds-2.1.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/NzaimZYw/versions/TYIsvfKN/loadingbackgrounds-2.1.0.zip"
+hash-format = "sha512"
+hash = "fe8c9fa03433589e42976d3577f575ca74f7f140d4618507d3a8ddd91fc7c0996ba1e8c7633a153e452e3ca0a08c3664810bd16deb27b9b8236ddce139c2421c"
+
+[update]
+[update.modrinth]
+mod-id = "NzaimZYw"
+version = "TYIsvfKN"
