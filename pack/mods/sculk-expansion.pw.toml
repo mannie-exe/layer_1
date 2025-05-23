@@ -1,13 +1,13 @@
 name = "Sculk Expansion"
-filename = "sculk-expansion-1.3.3.zip"
+filename = "sculk-expansion-1.3.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/UNlTQZ8V/versions/ONDVk8FH/sculk-expansion-1.3.3.zip"
+url = "https://cdn.modrinth.com/data/UNlTQZ8V/versions/aTlS2YJ3/sculk-expansion-1.3.3.jar"
 hash-format = "sha512"
 hash = "399ba1a2e5e1bf375d9b60de09682664d0e3bdd6251c6bb21b79b9c207a7fd9277eef4cb5ed94e276e0474b6a956346928be16cb2e1e0d2716a1eb8414a869b3"
 
 [update]
 [update.modrinth]
 mod-id = "UNlTQZ8V"
-version = "ONDVk8FH"
+version = "aTlS2YJ3"

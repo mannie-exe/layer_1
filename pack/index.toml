@@ -18,38 +18,8 @@ hash = "4c51a575c544d78ac5f279bbca7f09a91c3606feed5be071d1e792706f256f98"
 metafile = true
 
 [[files]]
-file = "config/openloader/data/dungeons-and-taverns.pw.toml"
-hash = "20abe9a665ed77b271bd132e646a21d73a057aec4a5e9f6f3889267518d1ec6c"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/explorify.pw.toml"
-hash = "cdc5fefc1ebd41dbf03f7c5d885c920dcd3d583d948e281d7edc7c8512baf3ae"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/geophilic.pw.toml"
-hash = "2fa4a0b8450d5c7d79b8330c46ba4e451ea7a3cefcdbc77281b40ab9951ceefc"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/hearths.pw.toml"
-hash = "6ee0ada6d1b9d0d927a98c4b5595f790f23af211b728d7c4db90a9ca0f12a45e"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/mastercutter.pw.toml"
-hash = "a1e1c57702a05a9239dd7abb83a3d5f8c07b2622dcd60c2ae1d8b30c66a09cb0"
-metafile = true
-
-[[files]]
 file = "config/openloader/data/navigable-rivers.pw.toml"
 hash = "25535af97648d5b7a3661b14ca71e42a605c0c55574cacaa68319d3a45162f07"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/qraftyfied.pw.toml"
-hash = "87e30b78e9e10d3862e1b918d14fdd01116cdfb41d14c95cf154e6f31fc4c10c"
 metafile = true
 
 [[files]]
@@ -58,63 +28,8 @@ hash = "61afee8a5c7f1ee206d67e54ed74acbe344876ca2bc43b6f7101c5b413426762"
 metafile = true
 
 [[files]]
-file = "config/openloader/data/scorched.pw.toml"
-hash = "aea93c3267745f6994f07474a43b64d9bef5d6bd7b95dc0106c7b77d1a72f618"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/sculk-expansion.pw.toml"
-hash = "4b55a4d58a9381e9a60e867f6bd1be36758b352ffa33c4d7906f443efc1c5919"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/spawn-animations.pw.toml"
-hash = "4ca658b576ac309147cb2d7dbbfbc189e9c4c9baa7d592ace468bf04785a1fdf"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/structory-towers.pw.toml"
-hash = "51870f3f0d8a04e052023e844e2dfff58d293d70f6c8c476b75ce7ef4b88764f"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/structory.pw.toml"
-hash = "d0d89f58166ac1f4f015175f6a10b07c13400fa0697d47c4590253e91735a131"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/tectonic.pw.toml"
-hash = "6d1c51c6a9de9e90a77e3da3148f1da7bc6d17a116394db7eca23e0cec9c995b"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/terralith.pw.toml"
-hash = "aa0803cc84f250f1900e5efcfcf24c54d140f168401b0c29dac852a574cc2cc7"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/terratonic.pw.toml"
-hash = "1fbf3caca0cc8f9fcb8b70b777d0d99a7ab55c6bf6ef16fbdfbf15c666e659a0"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/tidal-towns.pw.toml"
-hash = "02c04c4b5d4dc08d631be47b1be287f7b0c9dc18c0249142b9e3f0aa1406e4da"
-metafile = true
-
-[[files]]
 file = "config/openloader/data/towering-tepuis.pw.toml"
 hash = "140e79a7d89cc4f7f1d12b7617e237b78258c250d1dddc0a6d0a86ffb2e6e213"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/vanilla-refresh.pw.toml"
-hash = "f3161be27569779cff0b3c68ce655b5df0f466076a04311accaaf2deabf7ac8e"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/william-wythers-overhauled-overworld-(datapack).pw.toml"
-hash = "0cce2a4e6b421fc1bde74792d945afbf0f6ef4087328206d971052397b1fd8a6"
 metafile = true
 
 [[files]]
@@ -347,6 +262,11 @@ hash = "c82b2e2f2d2392fbb45a75f8e555200abceee13da43367ada2c5f56cf45c2cab"
 metafile = true
 
 [[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "447ec530620e3c0da62316cb3358e43c15132084aab22ba992fefac199ca92a9"
+metafile = true
+
+[[files]]
 file = "mods/durability-tooltip.pw.toml"
 hash = "a47138a91677a89d84e5ab37da1f501f4770ab07e51ae8ce6fdd27fb2d14f026"
 metafile = true
@@ -419,6 +339,11 @@ metafile = true
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
 hash = "d41804aff0c09612645047b2e53bfd88a018deaa7e4ad17d6656dd67e0af2a83"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "a0b3f914a386d4236744bc749156bb7eca1014179a50e340af1ea4741198782f"
 metafile = true
 
 [[files]]
@@ -502,6 +427,11 @@ hash = "a0a4120479b3a00265797ba4ab4b351e7ea6730f1a0394d069da0d92165a3bd9"
 metafile = true
 
 [[files]]
+file = "mods/geophilic.pw.toml"
+hash = "87d16e6f43df61a8fb025a9977343bc2f026570d198f48d82ef087be0d9e29eb"
+metafile = true
+
+[[files]]
 file = "mods/gipples-galore.pw.toml"
 hash = "22a87d60e0ca2d030a5593827ae4d8427da90a39b07442b51a2704d057f70210"
 metafile = true
@@ -524,6 +454,11 @@ metafile = true
 [[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "a4db2300b1826a540ab97660a9830b1c2887454542f14ee4f10b64a7150a5e60"
+metafile = true
+
+[[files]]
+file = "mods/hearths.pw.toml"
+hash = "55f92a03df046f1ee4da2100025726e166576d47378932b685c56b9ff3da2a37"
 metafile = true
 
 [[files]]
@@ -664,6 +599,11 @@ metafile = true
 [[files]]
 file = "mods/make_bubbles_pop.pw.toml"
 hash = "f531a8ee70e9d78ee62a84e3fd18088070dcf8f2cee2384a8aabed16dbfafe6c"
+metafile = true
+
+[[files]]
+file = "mods/mastercutter.pw.toml"
+hash = "eda5b091e0f753f42c557e5ef2a1efba2b17c11e44115d93f90c246290627146"
 metafile = true
 
 [[files]]
@@ -832,6 +772,11 @@ hash = "5ac7a1055d1aa463f08d09e66512d15366e1a27163d1ab34ca0f6258d3c88fbb"
 metafile = true
 
 [[files]]
+file = "mods/qraftyfied.pw.toml"
+hash = "32a96a971a60edad0a8f37e91c8b90a06d2523b7d5f4825c8d4b953d3aaf6800"
+metafile = true
+
+[[files]]
 file = "mods/raised.pw.toml"
 hash = "98362357cbb70b039275c055bb357fad1bb8a1566d5713dd7cfd9132dd606886"
 metafile = true
@@ -872,8 +817,18 @@ hash = "4cc43a9b1a71ca0ee121a754dd070f52b963d8fd47ed733886638a90ec0be7cd"
 metafile = true
 
 [[files]]
+file = "mods/scorched.pw.toml"
+hash = "ee9f80e2894babfd878d8188697b99fc13a3c5220d5b630cec1f32c8e3aadd36"
+metafile = true
+
+[[files]]
 file = "mods/scribble.pw.toml"
 hash = "717906f148da2e135fa8a6b0bb1a206d5bf2369bffbb0c5f0878346eca5e7521"
+metafile = true
+
+[[files]]
+file = "mods/sculk-expansion.pw.toml"
+hash = "0f80118cc014fa0ce3c4fc8c05b2b3fca0d212ccd65de63ed30073e88ac22a8b"
 metafile = true
 
 [[files]]
@@ -912,6 +867,11 @@ hash = "456b20442833ec434ba2a6dc1012a443f795787bf527cd72e91520e5ba1d3bcb"
 metafile = true
 
 [[files]]
+file = "mods/spawn-animations.pw.toml"
+hash = "658f2f78263d779d2c988d548b09af015c4ef8e51819acf5f18bb1bfd1c5ee82"
+metafile = true
+
+[[files]]
 file = "mods/stack-to-nearby-chests.pw.toml"
 hash = "6e06c71124bd06e1e489c9ad5034046a29344eddb599058d7c4cb2e5703bad1a"
 metafile = true
@@ -924,6 +884,16 @@ metafile = true
 [[files]]
 file = "mods/stoneworks.pw.toml"
 hash = "53ff34a5821f588c428221b6e7104d3e4fcf70ab7683c241e4149a4816251fed"
+metafile = true
+
+[[files]]
+file = "mods/structory-towers.pw.toml"
+hash = "29eb2bfab304dc0c77cefbe18c813ec8a0f26d62e56a237f6683718e101f9f53"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "904ad5b0b32e5875203ded1e5f98995d2b93441e42c9a82fa6ca884a933a729d"
 metafile = true
 
 [[files]]
@@ -949,6 +919,21 @@ metafile = true
 [[files]]
 file = "mods/tax-free-levels.pw.toml"
 hash = "fcd92853a728b92cc82d6de0adcb42b0463c6825069e30a07c707fc571dc119a"
+metafile = true
+
+[[files]]
+file = "mods/tectonic.pw.toml"
+hash = "257596cef0449db3c18e4821b6aaaa5a9dc3f21a885eea88ecea7d740e61073d"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
+file = "mods/tidal-towns.pw.toml"
+hash = "0cbfee517ef794590c79f407c060a42f9719e8533f730411761d3d429463af03"
 metafile = true
 
 [[files]]
@@ -987,6 +972,11 @@ hash = "a423853e756d6927d302924d48a30d8decce24803b1a68d22372bc84fbad9697"
 metafile = true
 
 [[files]]
+file = "mods/vanilla-refresh.pw.toml"
+hash = "08adb73786ed18c7c56c7e89baebc13979ddffe9afb9bd8dd93655c7dfd17640"
+metafile = true
+
+[[files]]
 file = "mods/villager-hats.pw.toml"
 hash = "6f713619285ecd927a139ce675f2d340f88063cbc78790f87d6b1b9717f4a7df"
 metafile = true
@@ -1019,6 +1009,11 @@ metafile = true
 [[files]]
 file = "mods/withering-heights.pw.toml"
 hash = "fdbe941abdcbcd464c4413681aab137e1065c2e8181d17627c4e9f66cf1a2aee"
+metafile = true
+
+[[files]]
+file = "mods/wwoo.pw.toml"
+hash = "b8691fd91e8198d001e78d7ca82c9ab05aee6fb76bebb41b1b6fd6ca98ff29c9"
 metafile = true
 
 [[files]]
