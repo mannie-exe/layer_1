@@ -27,6 +27,21 @@ Overhauled terrain generation with Terralith, new structures, and biome improvem
 ### 🏗️ Builder's Paradise
 Extensive decorative options through Supplementaries, Handcrafted, and more - perfect for creative builders.
 
+## Prerequisites
+
+### For Players
+- **Java Runtime Environment (JRE) 21+** - Required by Minecraft 1.21.1
+  - [Adoptium](https://adoptium.net/) (recommended) or any OpenJDK 21+ distribution
+- **Fabric-compatible launcher** - Prism Launcher, MultiMC, ATLauncher, etc.
+
+### For Developers
+- **packwiz** - Must be installed and available on PATH
+  - Installation: https://packwiz.infra.link/installation
+- **Bash scripting environment**:
+  - **macOS/Linux**: Native support
+  - **Windows**: WSL (Windows Subsystem for Linux) or Git Bash
+  - **Alternative**: Ability to run packwiz commands manually
+
 ## Documentation
 
 - **[Mod Overview](docs/MODS.md)** - Feature-grouped summary of included mods
