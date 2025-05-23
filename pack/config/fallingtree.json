@@ -1,0 +1,48 @@
+{
+  "breakInCreative": true,
+  "enchantment": {
+    "requireEnchantment": false
+  },
+  "lootInCreative": true,
+  "notificationMode": "ACTION_BAR",
+  "player": {
+    "allowedTags": []
+  },
+  "sneakMode": "IGNORE",
+  "tools": {
+    "allowed": [],
+    "damageMultiplicand": 1,
+    "damageRounding": "ROUND_DOWN",
+    "denied": [],
+    "durabilityMode": "NORMAL",
+    "forceToolUsage": false,
+    "ignoreTools": true,
+    "speedMultiplicand": 0
+  },
+  "trees": {
+    "adjacentStopMode": "STOP_BRANCH",
+    "allowedAdjacentBlocks": [],
+    "allowedLeaves": [],
+    "allowedLogs": [],
+    "allowedNonDecayLeaves": [],
+    "allowMixedLogs": true,
+    "breakMangroveRoots": true,
+    "breakMode": "FALL_ALL_BLOCK",
+    "breakNetherTreeWarts": true,
+    "breakOrder": "CLOSEST_FIRST",
+    "deniedLeaves": [],
+    "deniedLogs": [],
+    "detectionMode": "ABOVE_CUT",
+    "includePersistentLeavesInRequiredCount": false,
+    "leavesBreaking": true,
+    "leavesBreakingForceRadius": 0,
+    "maxLeafDistanceFromLog": 32,
+    "maxScanSize": 4096,
+    "maxSize": 4096,
+    "maxSizeAction": "CUT",
+    "minimumLeavesAroundRequired": 0,
+    "searchAreaRadius": -1,
+    "spawnItemsAtBreakPoint": false,
+    "treeBreaking": true
+  }
+}
