@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/iris.properties"
+hash = "07091249923fe423ad7e5e597146bc15f426979d8a71890919f34b526309e529"
+
+[[files]]
 file = "config/openloader/data/william-wythers-overhauled-overworld-(datapack).pw.toml"
 hash = "0cce2a4e6b421fc1bde74792d945afbf0f6ef4087328206d971052397b1fd8a6"
 metafile = true
@@ -481,6 +485,11 @@ hash = "b1b330eb115be92528c50f94b255ce5522d884202f112748d4697ae164b6514f"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "5284f6d141a990f4ea021c12b851e07102f5cb22743cf7b33be6ad2eb4c8d3f5"
+metafile = true
+
+[[files]]
 file = "mods/item-descriptions.pw.toml"
 hash = "9539175ee63aa1a7db452b33cca13f7742c79123dbd152d5f886d08dbd7bb547"
 metafile = true
@@ -558,6 +567,11 @@ metafile = true
 [[files]]
 file = "mods/melody.pw.toml"
 hash = "2e26dd4ebd07b97d68a9775b84fae707d8824c926e086bb3bcad11687b3fb204"
+metafile = true
+
+[[files]]
+file = "mods/midnightlib.pw.toml"
+hash = "414c2909a26ebe54725b45866031806212d9c84bff0f1e052ad5f2e5a61d7d53"
 metafile = true
 
 [[files]]
@@ -861,6 +875,11 @@ hash = "0cbfee517ef794590c79f407c060a42f9719e8533f730411761d3d429463af03"
 metafile = true
 
 [[files]]
+file = "mods/tidal-waves.pw.toml"
+hash = "c3eeb965a91dc6d3f00e645364faa34fd29f04f8483c78ad40fab98c578bd195"
+metafile = true
+
+[[files]]
 file = "mods/tiny-item-animations.pw.toml"
 hash = "d7655654c6b8fc819f2a01a4b50bb8b133efb1b5da88394b4af5581599a34a5e"
 metafile = true
@@ -952,7 +971,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "a1a5121436084c8838801d9f1aed569a21e44517687b41c111e338a70d762de6"
+hash = "4a72b14c240bd51900d4f858c5d5fd346ac129ba1188d707307278bbed0f1eea"
 
 [[files]]
 file = "resourcepacks/3d-ladders.pw.toml"
@@ -1040,5 +1059,11 @@ hash = "1c21bf8fb32205a0f9c8bf6bdfb1643c249aa4da08921bd34fae61ca32bea910"
 metafile = true
 
 [[files]]
-file = "shaderpacks/BSL_v8.4.02.2.zip.txt"
-hash = "1b3b54d88b70812336ce3b5b7b3d57b92b053283443b02f6edc1517bcdf42b41"
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "d30923bf5cfb4988a372508cb461d8077609d79a38d0b170785804c7ad15f16e"
+metafile = true
+
+[[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "db3eac9aaadd5d732180a0dd7ae8a322c07386259a971b177f4f2fef50a29c6f"
+metafile = true

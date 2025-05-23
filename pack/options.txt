@@ -1,4 +1,15 @@
 guiScale:6
 maxFps:60
-resourcePacks:["vanilla","fabric","moonlight:mods_dynamic_assets","file/Serified Font v1.1 f1-34.zip","file/armory-conglomery-v2.zip","continuity:default","continuity:glass_pane_culling_fix","file/Connected Paths v1.2.zip","cullleaves:smartleaves","file/Mossy\u0027s_Better_Dirt_1.0.zip","file/EGG textures 1.21.5 (25w08a).zip","file/DoorTweaks-v3.5.zip","file/§l3D§f+Ladders+v1.2(mc-1.21).zip","file/Undopia_3D_Rails_1.21_v.1.0.zip","file/simple-3d-iron-bars.zip","file/simple-3d-chain.zip","file/Fancy Crops v1.1.zip","file/3D Sugar Cane.zip","file/animated-items-1_21-1 - 1_4_2.zip","minecraft:supporteatinganimation","subtle_effects:biome_color_water_particles","a_good_place:default_animations","file/FreshAnimations_v1.9.2.zip","file/FA+All_Extensions-v1.4.zip"]
-incompatibleResourcePacks:["adventuredungeons","ambiance","appleskin","balm","bookshelf","carryon","clientsort","configuration","deeperdarker","enchdesc","hardcorerevival","immersiveui","inventoryessentials","jade","kiwi","konkrete","mr_withering_heights","polymorph","redstonepen","sereneseasons","subtle_effects","veil","villagerhats","voidtotem","yet_another_config_lib_v3","file/Serified Font v1.1 f1-34.zip","file/armory-conglomery-v2.zip","file/Connected Paths v1.2.zip","file/EGG textures 1.21.5 (25w08a).zip"]
+resourcePacks:["vanilla","fabric","moonlight:mods_dynamic_assets","file/Serified Font v1.1 f1-34.zip","file/armory-conglomery-v2.zip","continuity:default","continuity:glass_pane_culling_fix","file/Connected Paths v1.2.zip","cullleaves:smartleaves","file/Mossy\u0027s_Better_Dirt_1.0.zip","file/EGG textures 1.21.5 (25w08a).zip","file/DoorTweaks-v3.5.zip","file/§l3D§f+Ladders+v1.2(mc-1.21).zip","file/Undopia_3D_Rails_1.21_v.1.0.zip","file/simple-3d-iron-bars.zip","file/simple-3d-chain.zip","file/Fancy Crops v1.1.zip","file/3D Sugar Cane.zip","file/animated-items-1_21-1 - 1_4_2.zip","minecraft:supporteatinganimation","subtle_effects:biome_color_water_particles","a_good_place:default_animations","file/FreshAnimations_v1.9.2.zip","file/FA+All_Extensions-v1.4.zip","file/Skeleton Physics.zip"]
+incompatibleResourcePacks:["adventuredungeons","ambiance","appleskin","balm","bookshelf","carryon","clientsort","configuration","deeperdarker","enchdesc","hardcorerevival","immersiveui","inventoryessentials","jade","kiwi","konkrete","mr_dungeons_andtaverns","mr_withering_heights","polymorph","redstonepen","sereneseasons","subtle_effects","tectonic","veil","villagerhats","voidtotem","yet_another_config_lib_v3","file/Serified Font v1.1 f1-34.zip","file/armory-conglomery-v2.zip","file/Connected Paths v1.2.zip","file/EGG textures 1.21.5 (25w08a).zip"]
+joinedFirstServer:true
+soundCategory_master:1.0
+soundCategory_music:0.2512470657276996
+soundCategory_record:0.3392844043427231
+soundCategory_weather:0.15423268779342716
+soundCategory_block:0.4211322623239437
+soundCategory_hostile:0.5278205692488261
+soundCategory_neutral:0.2538145539906105
+soundCategory_player:0.3718273180751173
+soundCategory_ambient:0.33467209507042256
+soundCategory_voice:0.3715522300469483

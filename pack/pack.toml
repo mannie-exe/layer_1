@@ -1,12 +1,12 @@
 name = "layer_1"
 author = "zer0cell"
-version = "0.1.0"
+version = "0.1.0-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ea9001fba7bec4b2c3e49a2d37f18f91ad82b5665de23e95788a93d9fd1f6598"
+hash = "715e7a50eab527e904f6ce837f1f867616aeb8e9d18bb417807c053a3bc1e922"
 
 [versions]
 fabric = "0.16.14"

@@ -1,0 +1,13 @@
+name = "Tidal"
+filename = "tidal-0.0.2-beta.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/QsiPPta0/versions/Rh86Cb7C/tidal-0.0.2-beta.jar"
+hash-format = "sha512"
+hash = "11761786384e94f0ccc13f32dade9cb43dc3c045db7a876c4b038f88cb0f5846024b88df0f7b314cb7322417b88899d3a45e49b00178e294a6072698fa119d14"
+
+[update]
+[update.modrinth]
+mod-id = "QsiPPta0"
+version = "Rh86Cb7C"
