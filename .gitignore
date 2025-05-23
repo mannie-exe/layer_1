@@ -3,10 +3,16 @@
 Thumbs.db
 
 # packwiz-installer
-installer/installer.jar
+installer/packwiz-installer.jar
+
+# Client/server exports
+dist/client/*
+!dist/client/.gitkeep
+dist/server/*
+!dist/server/.gitkeep
 
 # CurseForge zip files
-*.zip
+dist/*.zip
 
 # Modrinth modpacks
-*.mrpack
+dist/*.mrpack
