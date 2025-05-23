@@ -142,6 +142,11 @@ hash = "27da7a067a8d3babfd3e5b448d8d93820bb2f9177e50a979ce680d374176c0a9"
 metafile = true
 
 [[files]]
+file = "mods/almanac.pw.toml"
+hash = "208a52276bf3af6ffd30b032b5954269bc30513053c279e7255cc167c38e5d5c"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
@@ -294,6 +299,11 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
 metafile = true
 
 [[files]]
@@ -637,6 +647,11 @@ hash = "f608a4456f51f3da47f9c4ecdadbcadbdad68344993938e61ff546de9fa890b4"
 metafile = true
 
 [[files]]
+file = "mods/lmd.pw.toml"
+hash = "46e175b662617498d6f250e57f3f66b1b39a40252933b3466e1ff6a7f6209725"
+metafile = true
+
+[[files]]
 file = "mods/lootr.pw.toml"
 hash = "8849846cf76b0bda5450c74579eb26935ab44f941d41728e0374253de82633ba"
 metafile = true
@@ -859,6 +874,11 @@ metafile = true
 [[files]]
 file = "mods/scribble.pw.toml"
 hash = "717906f148da2e135fa8a6b0bb1a206d5bf2369bffbb0c5f0878346eca5e7521"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "8302da862578554b012b2cfe58a3c1e75b514d09f94d842e7303be41a2157aeb"
 metafile = true
 
 [[files]]
