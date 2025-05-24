@@ -32,10 +32,7 @@ jobs:
         echo "$HOME/go/bin" >> $GITHUB_PATH
     
     - name: Install tq (TOML query tool)
-      run: |
-        wget -O tq https://github.com/ZeroErrors/tq/releases/latest/download/tq-linux-amd64
-        chmod +x tq
-        sudo mv tq /usr/local/bin/
+      run: cargo install tomlq
     
     - name: Get version from pack.toml
       id: version
