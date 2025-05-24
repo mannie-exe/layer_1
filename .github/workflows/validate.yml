@@ -1,0 +1,52 @@
+name: Validate Pack
+
+on:
+  pull_request:
+    paths:
+      - 'pack/**'
+      - 'make.sh'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate Modpack
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+    
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: 'stable'
+    
+    - name: Install packwiz
+      run: |
+        go install github.com/packwiz/packwiz@latest
+        echo "$HOME/go/bin" >> $GITHUB_PATH
+    
+    - name: Refresh pack index
+      run: packwiz --pack-file pack/pack.toml refresh
+    
+    - name: List all mods
+      run: |
+        echo "## All Mods"
+        packwiz --pack-file pack/pack.toml list
+    
+    - name: List client-side mods
+      run: |
+        echo "## Client-side Mods"
+        packwiz --pack-file pack/pack.toml list --side client
+    
+    - name: List server-side mods
+      run: |
+        echo "## Server-side Mods"
+        packwiz --pack-file pack/pack.toml list --side server
