@@ -33,10 +33,11 @@ fi
 VERSION=$(tq -f $PACKFILE 'version' | sed 's/"//g')
 
 echo "♻️ Using pack file: $PACKFILE (version: $VERSION)"
+packwiz --pack-file $PACKFILE refresh
 
 if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
-  packwiz --pack-file $PACKFILE \
-    refresh
+  echo "📦 Packing modpack (Modrinth)"
+
   packwiz --pack-file $PACKFILE \
     mr export \
     -o "dist/layer_1-${VERSION}.mrpack"
@@ -52,10 +53,8 @@ function clean() {
     exit 1
   fi
 
-  find dist/$1 -mindepth 1 \
-    ! -name '.gitkeep' | read
-
-  if [ -z "$?" ]; then
+  # Check if there are files to clean (besides .gitkeep)
+  if [ -z "$(find dist/$1 -mindepth 1 ! -name '.gitkeep' -print -quit)" ]; then
     return
   fi
 
