@@ -86,7 +86,6 @@ fi
 # Handle client build
 if [ "$MAKE" = "client" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
 
-  echo "🧼 Cleaning client build"
   clean client
 
   if [ "$MAKE" = "client" ] || [ "$MAKE" = "all" ]; then
