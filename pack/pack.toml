@@ -1,6 +1,6 @@
 name = "layer_1"
 author = "zer0cell"
-version = "0.3.1-alpha"
+version = "0.3.2-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]
