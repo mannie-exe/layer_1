@@ -4,6 +4,8 @@ set -e
 
 POSSIBLE_TASKS=(
   "list:mods:client"
+  "list:mods:server"
+  "list:mods"
 )
 
 if [ -z "$1" ]; then
@@ -22,13 +24,18 @@ fi
 
 NAME=$(tq -f $PACKFILE 'name' | sed 's/"//g')
 VERSION=$(tq -f $PACKFILE 'version' | sed 's/"//g')
+TOTAL_MODS=$(ls pack/mods/*.pw.toml | wc -l | xargs -L1 echo)
 
-if [ "$1" = "list:mods:client" ]; then
-  echo "📦 $NAME v${VERSION}: Client-side mods"
+function list_sided_mods() {
+  if [ "$1" = "both" ]; then
+    echo "📦 $NAME v${VERSION}: All mods"
+  else
+    echo "📦 $NAME v${VERSION}: ${1}-only mods"
+  fi
 
-  TOTAL_MODS=$(ls pack/mods/*.pw.toml | wc -l)
   PROCESSED=0
-  CLIENT_MODS=()
+  FOUND=0
+  MODS=()
 
   echo "🔍 Scanning $TOTAL_MODS mods..."
 
@@ -36,19 +43,45 @@ if [ "$1" = "list:mods:client" ]; then
     PROCESSED=$((PROCESSED + 1))
     printf "\r⏳ Processing mod %d/%d..." $PROCESSED $TOTAL_MODS
 
-    SIDE=$(tq -f $MOD 'side' | sed 's/"//g')
+    SIDE=$(tq -f $MOD 'side' 2>/dev/null | sed 's/"//g' || echo "")
     MODNAME=$(tq -f $MOD 'name' | sed 's/"//g')
 
-    if [ "$SIDE" = "client" ]; then
-      CLIENT_MODS+=("  $PROCESSED. $MODNAME")
+    # Filter logic:
+    # - "both": show all mods
+    # - "client": only show mods explicitly marked side = "client"
+    # - "server": only show mods explicitly marked side = "server"
+    if [ "$1" = "both" ]; then
+      FOUND=$((FOUND + 1))
+      MODS+=("  $FOUND. $MODNAME")
+    elif [ "$SIDE" = "$1" ]; then
+      FOUND=$((FOUND + 1))
+      MODS+=("  $FOUND. $MODNAME")
     fi
   done
 
-  # Clear progress line and show results
+  # Clear progress line and show results w/ summary at the bottom
   printf "\r"
-  echo "✅ Found ${#CLIENT_MODS[@]} client-side mods:"
-
-  for MOD in "${CLIENT_MODS[@]}"; do
-    echo "  $MOD"
+  for MOD in "${MODS[@]}"; do
+    echo "$MOD"
   done
+  if [ "$1" = "both" ]; then
+    echo "✅ Found ${#MODS[@]} total mods:"
+  else
+    echo "✅ Found ${#MODS[@]} ${1}-only mods:"
+  fi
+}
+
+if [ "$1" = "list:mods:client" ]; then
+  list_sided_mods "client"
+  exit 0
+fi
+
+if [ "$1" = "list:mods:server" ]; then
+  list_sided_mods "server"
+  exit 0
+fi
+
+if [ "$1" = "list:mods" ]; then
+  list_sided_mods "both"
+  exit 0
 fi
