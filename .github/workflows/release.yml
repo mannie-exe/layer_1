@@ -33,9 +33,9 @@ jobs:
       - name: Create distribution zips
         run: |
           cd dist/client
-          zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-client.zip .
+          zip -r ../layer_1-v${{ steps.version.outputs.VERSION }}-client.zip .
           cd ../server
-          zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-server.zip .
+          zip -r ../layer_1-v${{ steps.version.outputs.VERSION }}-server.zip .
           cd ../..
 
       - name: Generate checksums
@@ -51,17 +51,17 @@ jobs:
         uses: shogo82148/actions-create-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          release_name: layer_1 ${{ steps.version.outputs.VERSION }}
+          release_name: v${{ steps.version.outputs.VERSION }}
           draft: true
           prerelease: ${{ contains(steps.version.outputs.VERSION, 'alpha') || contains(steps.version.outputs.VERSION, 'beta') }}
           body: |
-            ## 📦 layer_1 ${{ steps.version.outputs.VERSION }}
+            ## layer_1 v${{ steps.version.outputs.VERSION }}
 
             ### 🚀 Downloads
-            - **📦 Modpack**: `layer_1-${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
-            - **💻 Client**: `layer_1-${{ steps.version.outputs.VERSION }}-client.zip` - Pre-installed client mods  
-            - **🖥️ Server**: `layer_1-${{ steps.version.outputs.VERSION }}-server.zip` - Pre-installed server mods
-            - **⚙️ Config**: `pack.toml` - Update checker (stable URL)
+            - **Config**: `pack.toml` - Update checker (stable URL)
+            - **Modpack**: `layer_1-v${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
+            - **Client**: `layer_1-v${{ steps.version.outputs.VERSION }}-client.zip` - Pre-installed client mods
+            - **Server**: `layer_1-v${{ steps.version.outputs.VERSION }}-server.zip` - Pre-installed server mods
 
             ### 🎮 Quick Start
             1. Download the `.mrpack` file
@@ -83,7 +83,7 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: |
             pack/pack.toml
-            dist/layer_1-${{ steps.version.outputs.VERSION }}.mrpack
-            dist/layer_1-${{ steps.version.outputs.VERSION }}-client.zip
-            dist/layer_1-${{ steps.version.outputs.VERSION }}-server.zip
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}.mrpack
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}-client.zip
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}-server.zip
             dist/checksums.txt
