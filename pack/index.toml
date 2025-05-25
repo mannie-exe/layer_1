@@ -1357,11 +1357,6 @@ hash = "e229170750258fc6df9f20926af597ce4a689810aaa0676f57841eb68965aa31"
 metafile = true
 
 [[files]]
-file = "resourcepacks/trabens-3d-armor-models.pw.toml"
-hash = "af837dfc972ba256e0648fc67aa409600a473c1801c1f23f076ac24b8276a772"
-metafile = true
-
-[[files]]
 file = "resourcepacks/tras-fresh-player.pw.toml"
 hash = "32fe0fe8941110f8fba07ce7768faa1797de6b28e961ab65b483c380fc0a365a"
 metafile = true
