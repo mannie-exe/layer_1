@@ -1,0 +1,13 @@
+name = "Iron Bookshelves"
+filename = "ironbookshelves-1.21.1-1.4.10-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QmCOBeSP/versions/X9NucQOA/ironbookshelves-1.21.1-1.4.10-fabric.jar"
+hash-format = "sha512"
+hash = "5c24ed937fb9353c628137e680147ee88794cc70e468a40d2b4061bbbea60a836fa04aae1c09d848fd2eef3a8b17bb69e35ad9b7de8fbe5e8337b0f248d253d8"
+
+[update]
+[update.modrinth]
+mod-id = "QmCOBeSP"
+version = "X9NucQOA"

@@ -667,20 +667,24 @@ file = "config/nyfsspiders-common.toml"
 hash = "60820a39813205cc37dbc9ee1b47ac73e8a8e454f98e060e3db37d46835a4834"
 
 [[files]]
-file = "config/openloader/data/Cliffs and Coves v1.3.1.zip"
-hash = "5dd58b8b8cdd40a67aded4263d158064bd701f653ba81fc4e8b9db38c7bcbec8"
+file = "config/openloader/data/cliffs-and-coves.pw.toml"
+hash = "4c51a575c544d78ac5f279bbca7f09a91c3606feed5be071d1e792706f256f98"
+metafile = true
 
 [[files]]
-file = "config/openloader/data/Navigable Rivers v1.3.1.zip"
-hash = "368f3ec453b66e1d42714324166ca6b238d88915c1a1810dbcb7661ef6082425"
+file = "config/openloader/data/navigable-rivers.pw.toml"
+hash = "25535af97648d5b7a3661b14ca71e42a605c0c55574cacaa68319d3a45162f07"
+metafile = true
 
 [[files]]
-file = "config/openloader/data/Remove_Terralith_Intro_Message_v1.1.zip"
-hash = "2158d806fef74938eb72aa28ebedf2ba9961064a69a60252e5c6024c84dca130"
+file = "config/openloader/data/remove-terralith-intro-message.pw.toml"
+hash = "61afee8a5c7f1ee206d67e54ed74acbe344876ca2bc43b6f7101c5b413426762"
+metafile = true
 
 [[files]]
-file = "config/openloader/data/Towering Tepuis v1.1.1.zip"
-hash = "0960c353997175b33f90aa46c3755e89e770d479c6fb7eff47e0e6f138f568dd"
+file = "config/openloader/data/towering-tepuis.pw.toml"
+hash = "140e79a7d89cc4f7f1d12b7617e237b78258c250d1dddc0a6d0a86ffb2e6e213"
+metafile = true
 
 [[files]]
 file = "config/openloader/options.json"
@@ -1089,6 +1093,11 @@ hash = "e53155acc7b3692b6a2684f6334d50c9e128b1f007ad7b2c8b514e7d1f2500c5"
 metafile = true
 
 [[files]]
+file = "mods/bettertab.pw.toml"
+hash = "2c9804d66e50e4a0aa148695e8b6246a36bcc487965626d501e2c5f57e280ece"
+metafile = true
+
+[[files]]
 file = "mods/bia.pw.toml"
 hash = "4ce89d53bd5f425d89b70322e77f87a2026b95e6854dc8a076cc19333115a813"
 metafile = true
@@ -1259,6 +1268,11 @@ hash = "eb32b8f6578bc65868596a52d9e48f6f638c9e88929748968acb0fd04375720f"
 metafile = true
 
 [[files]]
+file = "mods/cyberanner-ironchest.pw.toml"
+hash = "6a89cf951df2610ceaf07877657de5ae63bf3bc67cc94f5d802c9cc78114fbf9"
+metafile = true
+
+[[files]]
 file = "mods/dark-loading-screen.pw.toml"
 hash = "5f7537e9f19357e3a5bcc077725f15a1694fb9f67c4cdfd96f3b993a85e397f1"
 metafile = true
@@ -1341,6 +1355,11 @@ metafile = true
 [[files]]
 file = "mods/enchanted-vertical-slabs.pw.toml"
 hash = "9822a88d83655325db964ceecabc9a5e508efd541ecd4a6356463d5ec0da2a58"
+metafile = true
+
+[[files]]
+file = "mods/enchanting-infuser.pw.toml"
+hash = "c0deaf3c63eb7ef75a2e46a908a9f6dd494141da48bdee9fe2bacc9c547e8425"
 metafile = true
 
 [[files]]
@@ -1584,6 +1603,11 @@ hash = "5284f6d141a990f4ea021c12b851e07102f5cb22743cf7b33be6ad2eb4c8d3f5"
 metafile = true
 
 [[files]]
+file = "mods/iron-bookshelves.pw.toml"
+hash = "9527c3e3a46faa15040a8370bc502d1249daf4035b4e8b542a07eb938ac73c77"
+metafile = true
+
+[[files]]
 file = "mods/item-descriptions.pw.toml"
 hash = "9539175ee63aa1a7db452b33cca13f7742c79123dbd152d5f886d08dbd7bb547"
 metafile = true
@@ -1804,6 +1828,11 @@ hash = "5552f85e168d758f480391f7dc1ebcec0060bfbb960b9e4bbccee6ee8c74e87b"
 metafile = true
 
 [[files]]
+file = "mods/ping-wheel.pw.toml"
+hash = "f93ed45f55d23b43916724a8028d597e5747e3836e3547a56a31a486b9aa6628"
+metafile = true
+
+[[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
 metafile = true
@@ -1886,21 +1915,6 @@ metafile = true
 [[files]]
 file = "mods/reimagined-trims.pw.toml"
 hash = "fde277954b63c99c73cf324478fb65025f4df208d65da54b2cb19ddc3944ccc8"
-metafile = true
-
-[[files]]
-file = "mods/reinforced-barrels.pw.toml"
-hash = "ba78e3c73e07885423a5fabfddf36a79c59ca44aa0123bd789d983551f12306a"
-metafile = true
-
-[[files]]
-file = "mods/reinforced-chests.pw.toml"
-hash = "219ac0d0e6ca75917231f947e473cc17ac399034c59f350e0896f054a7db307a"
-metafile = true
-
-[[files]]
-file = "mods/reinforced-shulker-boxes.pw.toml"
-hash = "f148571405f9b41e4a41ab64091ab61d7496ddfdc3fdaada374776d8273d4690"
 metafile = true
 
 [[files]]
