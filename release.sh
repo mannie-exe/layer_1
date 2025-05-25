@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
-if [[ -z $1 ]]; then
-  echo "Usage: $0 <version>"
-  echo "       $0 v0.1.0"
-  echo "       $0 0.1.0 (same as above)"
+PACKFILE="pack/pack.toml"
+
+if [ ! -f "$PACKFILE" ]; then
+  echo "‼️ Pack file not found: $PACKFILE"
   exit 1
 fi
 
-VERSION=${1/#v/}
-echo
-echo "🚀 Creating release: v${VERSION}"
+VERSION=$(tq -f $PACKFILE 'version' | sed 's/"//g')
 
+echo "♻️ Using pack file: $PACKFILE (version: $VERSION)"
+echo "🚀 Creating release: v${VERSION}"
 echo "⚠️  WARNING: This script will create a tag and push it to the repository."
+
 read -p "   Do you want to continue? [y/N] " -n 1 -r
 echo
 
