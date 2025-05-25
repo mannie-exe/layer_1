@@ -1,0 +1,13 @@
+name = "Omnilib"
+filename = "omnilib-0.1.4+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XoGLr1nL/versions/JqZ8lAuN/omnilib-0.1.4%2B1.21.jar"
+hash-format = "sha512"
+hash = "9bda25e43d93eeb5f1af3e592bfe30b6ade95ee647efe70b75e63408ac2dcc68794630e7b2bbe931f6fd7c2ba3c5f1e53a80ecc5b9eb245a05daaf0dd63c74d5"
+
+[update]
+[update.modrinth]
+mod-id = "XoGLr1nL"
+version = "JqZ8lAuN"

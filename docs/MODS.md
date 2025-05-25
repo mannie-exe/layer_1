@@ -110,6 +110,7 @@ Massive improvements to world generation while maintaining vanilla feel.
 
 ### Structures
 - **Structory** & **Structory: Towers** - New adventure structures
+- **qraftyfied: Industrial Structures** - Industrial-themed buildings
 - **Dungeons and Taverns** - RPG-style locations
 - **Tidal Towns** - Ocean village variants
 - **Villages & Pillages** - Enhanced villages
@@ -157,6 +158,35 @@ Extensive additions for builders while maintaining vanilla aesthetics.
 - **Trowel** - Create path blocks easily
 - **Scribble** - Draw on blocks
 - **MasterCutter** - Enhanced stonecutter
+- **Better Command Block UI** - Enhanced interface for command blocks
+
+## Storage & Logistics
+
+Enhanced storage solutions and item transportation.
+
+### Storage Systems
+- **Reinforced Barrels** - Stronger barrel storage with more capacity
+- **Reinforced Chests** - Enhanced chest storage
+- **Reinforced Shulker Boxes** - Improved shulker box storage
+- **Traveler's Backpack** - Portable storage with special abilities
+
+### Item Transport
+- **Simple Copper Pipes** - Fluid and item transport using copper
+- **Copper Rails** - New rail variants for minecart systems
+
+### Crafting
+- **Alloy Forgery** - Create metal alloys and advanced materials
+- **CraftSense** - Shows when you have materials for recipes
+
+## Photography & Creativity
+
+- **Exposure: Polaroid** - Take instant photos in-game
+- **Exposure** - Advanced camera and screenshot system
+
+## Movement & Travel
+
+- **Gliding** - Enhanced elytra flight mechanics
+- **Copper Rails** - Improved minecart transportation
 
 ## Technical Features
 
@@ -165,6 +195,8 @@ Essential support libraries that enable the modpack's features:
 - Fabric API, Architectury, Cloth Config
 - Moonlight Lib, Resourceful Lib, Puzzles Lib
 - Cardinal Components, Trinkets, GeckoLib
+- **FrozenLib** - Library for frozen-themed content
+- **OmniLib** - Omni-directional utilities
 
 ### Configuration
 - **Mod Menu** - Easy mod configuration access
@@ -181,7 +213,7 @@ Visual enhancements through optional resource packs:
 
 ## Summary
 
-Layer 1 combines 226 mods, 23 resource packs, 2 shader options, and 4 data packs to create a comprehensive vanilla+ experience. The pack focuses on:
+Layer 1 combines 239 mods, 23 resource packs, 2 shader options, and 4 data packs to create a comprehensive vanilla+ experience. The pack focuses on:
 
 - **Performance First**: Aggressive optimization without visual sacrifice
 - **Visual Polish**: Subtle improvements that enhance without changing Minecraft's identity  

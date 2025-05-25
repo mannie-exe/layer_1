@@ -1,0 +1,13 @@
+name = "Reinforced Barrels"
+filename = "reinforced-barrels-2.6.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Tx85779b/versions/GjI2Vc0z/reinforced-barrels-2.6.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "074839140257abd0acb7a67d2720a4200d676be2c829130d35f527f61959c6b60068dad7d6ffb9b760077a6d4c4e41b8c81aa9f058a2320da26e91774ff596b6"
+
+[update]
+[update.modrinth]
+mod-id = "Tx85779b"
+version = "GjI2Vc0z"

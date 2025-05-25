@@ -1,0 +1,13 @@
+name = "Gliding"
+filename = "gliding-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QiTycXco/versions/t1qLdSZR/gliding-1.0.1.jar"
+hash-format = "sha512"
+hash = "dbd800fddabb9b23992b826c732bd0fe6d330f763813249217c3b02be47da7f7c1cfcd9306e2545e14016934c20638941f9f598a1d69ba6acfcbbeeaccb3cee3"
+
+[update]
+[update.modrinth]
+mod-id = "QiTycXco"
+version = "t1qLdSZR"

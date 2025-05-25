@@ -45,6 +45,10 @@ file = "config/supplementaries-client.json"
 hash = "d32547dd9c27b8e38ab3cfee33a057f1daaf61b303ffc1cf3ace4816282396fc"
 
 [[files]]
+file = "config/travelersbackpack.json5"
+hash = "4491325c7c10046ff99a0c85add1351918fc732187c4a8b0a2e38a0adff944c4"
+
+[[files]]
 file = "config/voidtotem.toml"
 hash = "e4765c98cb8ea31c213456181114f65c97d21e6797a7e9a124d2734df3e43663"
 
@@ -71,6 +75,11 @@ metafile = true
 [[files]]
 file = "mods/adventure-dungeons.pw.toml"
 hash = "27da7a067a8d3babfd3e5b448d8d93820bb2f9177e50a979ce680d374176c0a9"
+metafile = true
+
+[[files]]
+file = "mods/alloy-forgery.pw.toml"
+hash = "2adf518c92809d9a8cb8c1bbb8f40f8d631a5702ccbcc4ee617a9365dcf48a4e"
 metafile = true
 
 [[files]]
@@ -141,6 +150,11 @@ metafile = true
 [[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "dd18db1413980ef467ac2e86c7e5f3cef26d366119f43121204a442583e7c0bd"
+metafile = true
+
+[[files]]
+file = "mods/bettercommandblockui.pw.toml"
+hash = "e53155acc7b3692b6a2684f6334d50c9e128b1f007ad7b2c8b514e7d1f2500c5"
 metafile = true
 
 [[files]]
@@ -269,6 +283,11 @@ hash = "6b461c90adcdfd87dd45890dbf79cd682c3eed1067a981c57b9e256caebdbf11"
 metafile = true
 
 [[files]]
+file = "mods/copperrails.pw.toml"
+hash = "177d284a411532b427c50ad2f9f384ed3161fdff26444a0a0c88f3ae06eabe43"
+metafile = true
+
+[[files]]
 file = "mods/coroutil.pw.toml"
 hash = "363b6a77d7f7802a58aecd51e932745b0ab663a5810a681b654e2f3584ac11b1"
 metafile = true
@@ -281,6 +300,11 @@ metafile = true
 [[files]]
 file = "mods/craftable-nametag.pw.toml"
 hash = "43c182143d89d89a95889ea670b8fca5fd9c33ffaaf27e7b80413ce63a2500ce"
+metafile = true
+
+[[files]]
+file = "mods/craftsense.pw.toml"
+hash = "4a6d691208ac5687ac36f0bb7ab99902e58db165c3366850faebe8bd865a025c"
 metafile = true
 
 [[files]]
@@ -429,6 +453,11 @@ hash = "b9971aa45df874975e051c11291b040e0f325e3d36c4ee6e93f252fdf7c0ffc3"
 metafile = true
 
 [[files]]
+file = "mods/exposure-polaroid.pw.toml"
+hash = "26c992225a56f4774fe0db5bc9d914ee420672fce73726462d073126b14ecf56"
+metafile = true
+
+[[files]]
 file = "mods/exposure.pw.toml"
 hash = "7ced883a5dcd1b2ccfcc3d038a46616eea20f9ae9ff7df14ad5a342551a70a7f"
 metafile = true
@@ -494,6 +523,11 @@ hash = "316fedfe4980be862ff26153ae4d5603ab4e2637fa6e1125b91f5d5989b06753"
 metafile = true
 
 [[files]]
+file = "mods/frozenlib.pw.toml"
+hash = "2454ffb5888ff5a0dd49f4d94b4c6fbb4a2c0c09b85d5d5cf66f24a07f5572f0"
+metafile = true
+
+[[files]]
 file = "mods/fsit.pw.toml"
 hash = "3ac8b3625686b3516a38391438c1d66d35306599eebac2e55070f1c100d8cf8f"
 metafile = true
@@ -516,6 +550,11 @@ metafile = true
 [[files]]
 file = "mods/gipples-galore.pw.toml"
 hash = "22a87d60e0ca2d030a5593827ae4d8427da90a39b07442b51a2704d057f70210"
+metafile = true
+
+[[files]]
+file = "mods/gliding.pw.toml"
+hash = "7ef6fa23f367a291cb3f5c49c7fb426762de6a816766df91bdfec7c9976579a0"
 metafile = true
 
 [[files]]
@@ -774,6 +813,11 @@ hash = "32ff59758677de9b6b6d6bdd80624b81aa208dfb6f7a7bbd0b3ba951a386c52a"
 metafile = true
 
 [[files]]
+file = "mods/omnilib.pw.toml"
+hash = "2a089ff5e347c72c01cb2f8dbc5abcf9f1cbce85cafcc5b1b3d8b014f9496c54"
+metafile = true
+
+[[files]]
 file = "mods/open-loader.pw.toml"
 hash = "5ea6f9fdefad7193d99da78fd4aebb62957ff5ae749bc3ea67abbe7272bcac63"
 metafile = true
@@ -874,6 +918,11 @@ hash = "5ac7a1055d1aa463f08d09e66512d15366e1a27163d1ab34ca0f6258d3c88fbb"
 metafile = true
 
 [[files]]
+file = "mods/qraftyfied-industrial-structures.pw.toml"
+hash = "a59c825d2a23e86640b49cb531aeefe8d1240bb0088c22b7b4b805ac5c9c18bf"
+metafile = true
+
+[[files]]
 file = "mods/qraftyfied.pw.toml"
 hash = "32a96a971a60edad0a8f37e91c8b90a06d2523b7d5f4825c8d4b953d3aaf6800"
 metafile = true
@@ -906,6 +955,21 @@ metafile = true
 [[files]]
 file = "mods/reimagined-trims.pw.toml"
 hash = "fde277954b63c99c73cf324478fb65025f4df208d65da54b2cb19ddc3944ccc8"
+metafile = true
+
+[[files]]
+file = "mods/reinforced-barrels.pw.toml"
+hash = "ba78e3c73e07885423a5fabfddf36a79c59ca44aa0123bd789d983551f12306a"
+metafile = true
+
+[[files]]
+file = "mods/reinforced-chests.pw.toml"
+hash = "219ac0d0e6ca75917231f947e473cc17ac399034c59f350e0896f054a7db307a"
+metafile = true
+
+[[files]]
+file = "mods/reinforced-shulker-boxes.pw.toml"
+hash = "f148571405f9b41e4a41ab64091ab61d7496ddfdc3fdaada374776d8273d4690"
 metafile = true
 
 [[files]]
@@ -956,6 +1020,11 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "4739fd0f979dd5fefecc5c47a07ef61ca78d1bdf525cd4e544e1a331ede3ca61"
+metafile = true
+
+[[files]]
+file = "mods/simple-copper-pipes.pw.toml"
+hash = "c8c4ff771efb2674ddc834787a0c093d4bf917b9a33e7d4fc429f3b9f01535a1"
 metafile = true
 
 [[files]]
@@ -1180,7 +1249,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "316d1e29027acf23fef04161417050b0d7c25e2a95c36161b1cda2425cddc02e"
+hash = "32c05659ab5cebb453eba09c599b3bc5324a5291d010f78f3e09450f9fe4ded1"
 
 [[files]]
 file = "resourcepacks/3d-crops.pw.toml"

@@ -1,0 +1,13 @@
+name = "FrozenLib"
+filename = "FrozenLib-2.1.3-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9KawNmQc/versions/rnZueXWN/FrozenLib-2.1.3-mc1.21.1.jar"
+hash-format = "sha512"
+hash = "070c7f483591316a5c28ce0d7fd08bd874bdba8aa8039c4414eeb67fa9abe94fc6152c75d3cc6903ff61205321549004f419a94c12e09a9801217aeee1eb5a12"
+
+[update]
+[update.modrinth]
+mod-id = "9KawNmQc"
+version = "rnZueXWN"
