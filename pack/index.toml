@@ -1250,6 +1250,7 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "32c05659ab5cebb453eba09c599b3bc5324a5291d010f78f3e09450f9fe4ded1"
+preserve = true
 
 [[files]]
 file = "resourcepacks/3d-crops.pw.toml"
@@ -1374,6 +1375,7 @@ hash = "abab9000c6b0e4837edf3552adf1e8970c92c1233c9de8feaef531585c3f3902"
 file = "shaderpacks/bsl-shaders.pw.toml"
 hash = "d30923bf5cfb4988a372508cb461d8077609d79a38d0b170785804c7ad15f16e"
 metafile = true
+preserve = true
 
 [[files]]
 file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
