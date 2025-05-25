@@ -53,7 +53,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           release_name: v${{ steps.version.outputs.VERSION }}
           draft: true
-          prerelease: ${{ contains(steps.version.outputs.VERSION, 'alpha') || contains(steps.version.outputs.VERSION, 'beta') }}
+          prerelease: false # forced false to provide a stable URL to latest assets
           body: |
             ## layer_1 v${{ steps.version.outputs.VERSION }}
 
