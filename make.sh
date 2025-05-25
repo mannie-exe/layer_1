@@ -40,7 +40,7 @@ if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
 
   packwiz --pack-file $PACKFILE \
     mr export \
-    -o "dist/layer_1-${VERSION}.mrpack"
+    -o "dist/layer_1-v${VERSION}.mrpack"
 
   if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ]; then
     exit 0
