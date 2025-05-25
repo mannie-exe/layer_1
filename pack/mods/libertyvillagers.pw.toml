@@ -1,6 +1,5 @@
 name = "Liberty's Villagers"
 filename = "liberty-villagers-mod-1.0.15+fabric+1.21.jar"
-side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/264clomZ/versions/bxr8NNbQ/liberty-villagers-mod-1.0.15%2Bfabric%2B1.21.jar"

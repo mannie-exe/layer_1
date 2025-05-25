@@ -1,6 +1,5 @@
 name = " Interdimensional Map Markers"
 filename = "interdimensional-map-markers-1.0.3.jar"
-side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/oiCuHwqj/versions/dG9qGP9B/interdimensional-map-markers-1.0.3.jar"

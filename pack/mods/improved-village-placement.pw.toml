@@ -1,6 +1,5 @@
 name = "Improved Village Placement"
 filename = "improved_village_placement_1.0.0.jar"
-side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/KA0MllEw/versions/GdEeeKSO/improved_village_placement_1.0.0.jar"

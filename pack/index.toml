@@ -1019,7 +1019,7 @@ metafile = true
 
 [[files]]
 file = "mods/almanac.pw.toml"
-hash = "208a52276bf3af6ffd30b032b5954269bc30513053c279e7255cc167c38e5d5c"
+hash = "2e5e368e1c9c3d86ac3713591f76e29970a7b9f2ca8647c208c9a06d4d145c7a"
 metafile = true
 
 [[files]]
@@ -1064,7 +1064,7 @@ metafile = true
 
 [[files]]
 file = "mods/beautified-chat-server.pw.toml"
-hash = "e2ac0b4f3e135b885b892250d8cf12ee68c78822055ec04835cf02b821b5a005"
+hash = "8838be74fbe26bf3bbb54be01e4a00e0a809c74025638145681351a26a51527c"
 metafile = true
 
 [[files]]
@@ -1079,7 +1079,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-safe-bed.pw.toml"
-hash = "6359b34704397138accd8dd28c4ec2edb6d2222d9ecf5af1793b003d8891bdb9"
+hash = "82f02931dc558391fffa01582301580e3e8d1cbcb3c830d1c8a2326f723d9f8d"
 metafile = true
 
 [[files]]
@@ -1109,7 +1109,7 @@ metafile = true
 
 [[files]]
 file = "mods/brainier-bees.pw.toml"
-hash = "cf67f01d257c4815590f6b6ed0351aed28eb907e2cc7a08d95c9f4d3eb76acc2"
+hash = "03cbea03c7502eafb6e8860f9a065ce248a9b0d9efdcbc0607c1f05b3d3e4363"
 metafile = true
 
 [[files]]
@@ -1129,7 +1129,7 @@ metafile = true
 
 [[files]]
 file = "mods/cardinal-components-api.pw.toml"
-hash = "56d0a735ef8c0bfe4ee06bfa66cd11753002c98411eb167cad68f8adcbd76d0a"
+hash = "08bec39783d5f4b2e63974908e9e8d1bdd816deccc4c97ea14ade34300065f3f"
 metafile = true
 
 [[files]]
@@ -1199,7 +1199,7 @@ metafile = true
 
 [[files]]
 file = "mods/companion.pw.toml"
-hash = "6d54a46692045cfc01f46f0112c658e8ca431bce160493f9669afbe9c1cbf007"
+hash = "44979aa6732c577714422e758264710d52b292b5b92bbf4a6b55bca3f407062b"
 metafile = true
 
 [[files]]
@@ -1334,7 +1334,7 @@ metafile = true
 
 [[files]]
 file = "mods/economical-villager-trading.pw.toml"
-hash = "0522425da4b2d7b99fe9cbffbc10b31e729413b0df59c02964029b0d2fe9529f"
+hash = "e59419a9bfd4c5015b7151f46b7e1af0a3fe8cac24945106345ba2640b8a0732"
 metafile = true
 
 [[files]]
@@ -1429,7 +1429,7 @@ metafile = true
 
 [[files]]
 file = "mods/fallingtree.pw.toml"
-hash = "69c5ae686703cc74e092591cd5a1939bd5cc2e8522f928c77a77ab803be5e77e"
+hash = "d40b2db4f75d900fc55f2038a74f7b6565e57ef9405e20d325fdd5f328004d0b"
 metafile = true
 
 [[files]]
@@ -1524,7 +1524,7 @@ metafile = true
 
 [[files]]
 file = "mods/harvest-with-ease.pw.toml"
-hash = "a4db2300b1826a540ab97660a9830b1c2887454542f14ee4f10b64a7150a5e60"
+hash = "9dbf4199330f970d06a40ef68bb93e62609903c5393533f5dde1838d8184b15e"
 metafile = true
 
 [[files]]
@@ -1564,7 +1564,7 @@ metafile = true
 
 [[files]]
 file = "mods/improved-village-placement.pw.toml"
-hash = "88aa2aed83cf21b265019e3061bb2095a9b6ab9cf9bf2f4b1ead487f25690daf"
+hash = "3d565316c954d02b50ac2c4369a8ecfbcda442012f121bab7f6fc0ee80be54ed"
 metafile = true
 
 [[files]]
@@ -1574,7 +1574,7 @@ metafile = true
 
 [[files]]
 file = "mods/interdimensional-map-markers.pw.toml"
-hash = "6781b1af8588ecb93c0cced31a6d27732d4d83c9b356f504d05e4839065a8a0c"
+hash = "23bd866a585b181ab407d20e510f9df1aa56af13964b371116e8582379c5f50e"
 metafile = true
 
 [[files]]
@@ -1584,7 +1584,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-totem.pw.toml"
-hash = "117a2d6ab1059e9d3bf65c4f17e4268797184bc7f9f4a17197ce92b5841ea26b"
+hash = "6c5c20ec7358aa4877de95f45782ecef775d8f42a3deb6e35defb909e66add55"
 metafile = true
 
 [[files]]
@@ -1624,7 +1624,7 @@ metafile = true
 
 [[files]]
 file = "mods/kleeslabs.pw.toml"
-hash = "fe57370919fcb2939a2601ec8c471226c3634f1f79bc091053a77ff4899997e5"
+hash = "4605e501f6b210bf853be55ea872fe658c7131acb108f145327383b269bf335e"
 metafile = true
 
 [[files]]
@@ -1639,12 +1639,12 @@ metafile = true
 
 [[files]]
 file = "mods/larion-worldgen.pw.toml"
-hash = "dbf1ba19938260c2eaf57df929bca01e9e150ef7b6b6bb459c02a025825e2381"
+hash = "8e7a56901b5cddc18a58c5931f26d5ac751f4426a9cde8bed914bd2773ac65ef"
 metafile = true
 
 [[files]]
 file = "mods/libertyvillagers.pw.toml"
-hash = "693e8923554b8757d89f08d8c1f4c33119f9ec6385f8e329b0d2fa72e228f144"
+hash = "9aa979d0503a3a9a604959d359951abd1a88673534c33fd701dc8c48615e4de6"
 metafile = true
 
 [[files]]
@@ -1654,12 +1654,12 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "f608a4456f51f3da47f9c4ecdadbcadbdad68344993938e61ff546de9fa890b4"
+hash = "d38a00010fef41f06cdcf6c8cbca011fbfa2321bd3644b34c365e2bafb937abc"
 metafile = true
 
 [[files]]
 file = "mods/lmd.pw.toml"
-hash = "46e175b662617498d6f250e57f3f66b1b39a40252933b3466e1ff6a7f6209725"
+hash = "0eb464bee4da3360411fbb1c8a0a401cb74cd7b3ac59eb0cb860dcae1f7cb443"
 metafile = true
 
 [[files]]
@@ -1724,7 +1724,7 @@ metafile = true
 
 [[files]]
 file = "mods/netherportalfix.pw.toml"
-hash = "537bdd1937193d94cf47f2232e2b38357415e5af8c950d97661b3ae881adbb4e"
+hash = "cb4a064eeb2fccc5cef405d0b42ff0341e0a11984ef66ca072da18d6a3d071bb"
 metafile = true
 
 [[files]]
@@ -1739,7 +1739,7 @@ metafile = true
 
 [[files]]
 file = "mods/noisium.pw.toml"
-hash = "dcc936d7bd32a86ce63fa3bf013864a4e2ed979cb126a915153ac70ce5e5671f"
+hash = "b48d9f8ecd24f140e92874d1bbf24708be48fefe03492b45c280eb7e4a5b75a8"
 metafile = true
 
 [[files]]
@@ -1819,7 +1819,7 @@ metafile = true
 
 [[files]]
 file = "mods/petprotect.pw.toml"
-hash = "ff1f97c304f9e537913a6e9fbbf710f2a884cd0bebd1bf4ef2475b3c3fb4a3ad"
+hash = "17f4272f18b485af31ec3480b0fa65f7424e311b98cd430a32d47f0cb550e567"
 metafile = true
 
 [[files]]
@@ -1959,7 +1959,7 @@ metafile = true
 
 [[files]]
 file = "mods/separatedleaves.pw.toml"
-hash = "5d1499e1b9fc40ce2794bea60b3330f5c0080ace0f2138ba7907cadb967cfa88"
+hash = "67a3bc55ac14468fe3ed39ec41047abf492defa705217fecdb4e581591db7bc7"
 metafile = true
 
 [[files]]
@@ -2129,12 +2129,12 @@ metafile = true
 
 [[files]]
 file = "mods/villager-names-serilum.pw.toml"
-hash = "a235940faf1631e6baaf5647865126fa28229a85853027d7769406456a6c6ed1"
+hash = "23fd0c73f5206a9b188ae930b4c74215a3617d477c4aeb7490e997714ab225f1"
 metafile = true
 
 [[files]]
 file = "mods/villages-and-pillages.pw.toml"
-hash = "eb49b472f2542c2691c3c161aaa29151f6dad02b5ae397aa544bf6e84e632e69"
+hash = "7db75cdcc0cb45656d49176d9d5410fdc46cf8f8f0b93a1024535fe0e5131046"
 metafile = true
 
 [[files]]
@@ -2174,7 +2174,7 @@ metafile = true
 
 [[files]]
 file = "mods/wwoo.pw.toml"
-hash = "b8691fd91e8198d001e78d7ca82c9ab05aee6fb76bebb41b1b6fd6ca98ff29c9"
+hash = "3508119ff0d807bae554d54c1a0bc94182fcd877f83a5b7142d3461815f5b466"
 metafile = true
 
 [[files]]

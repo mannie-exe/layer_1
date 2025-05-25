@@ -1,6 +1,5 @@
 name = "PetProtect"
 filename = "petprotect-1.1.1.jar"
-side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/LeqaEyxB/versions/405SpyFQ/petprotect-1.1.1.jar"
