@@ -72,7 +72,16 @@ if [ "$MAKE" = "server" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
   clean server
 
   if [ "$MAKE" = "server" ] || [ "$MAKE" = "all" ]; then
+    MC_VERSION=$(tq -f $PACKFILE 'versions.minecraft' | sed 's/"//g')
+    FABRIC_VERSION=$(tq -f $PACKFILE 'versions.fabric' | sed 's/"//g')
+
     pushd dist/server >/dev/null
+
+    mrpack-install server \
+      fabric --flavor-version $FABRIC_VERSION \
+      --minecraft-version $MC_VERSION \
+      --server-dir . \
+      --server-file srv.jar
 
     java -jar ../../installer/packwiz-installer-bootstrap.jar \
       --bootstrap-main-jar ../../installer/packwiz-installer.jar \
