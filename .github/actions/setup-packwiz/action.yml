@@ -1,0 +1,39 @@
+name: 'Setup Packwiz Environment'
+description: 'Install Java, Go, packwiz, and mrpack-install for modpack operations'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+    
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: 'stable'
+    
+    - name: Install packwiz
+      shell: bash
+      run: |
+        go install github.com/packwiz/packwiz@latest
+        echo "$HOME/go/bin" >> $GITHUB_PATH
+    
+    - name: Install mrpack-install
+      shell: bash
+      run: |
+        ARCH=$(uname -m)
+        if [ "$ARCH" = "x86_64" ]; then
+          BINARY="mrpack-install-linux"
+        elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ]; then
+          BINARY="mrpack-install-linux-arm64"
+        else
+          echo "Unsupported architecture: $ARCH"
+          exit 1
+        fi
+        
+        wget -q "https://github.com/nothub/mrpack-install/releases/latest/download/$BINARY" -O mrpack-install
+        chmod +x mrpack-install
+        sudo mv mrpack-install /usr/local/bin/

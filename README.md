@@ -57,6 +57,13 @@ Extensive decorative options through Supplementaries, Handcrafted, and more - pe
 3. Allocate 4-8GB RAM depending on desired performance
 4. Launch and enjoy!
 
+#### 🔄 Auto-Updates (Optional)
+For automatic updates, add this pre-launch command in your launcher:
+```
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://github.com/mannie-exe/layer_1/releases/latest/download/pack.toml
+```
+This will automatically download new mods and updates before each launch.
+
 ### For Developers
 
 > ⚠️ `./make.sh (server|client|all)`

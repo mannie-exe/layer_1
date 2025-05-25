@@ -12,110 +12,78 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    
-    - name: Setup Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '21'
-    
-    - name: Setup Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: 'stable'
-    
-    - name: Install packwiz
-      run: |
-        go install github.com/packwiz/packwiz@latest
-        echo "$HOME/go/bin" >> $GITHUB_PATH
-    
-    - name: Install mrpack-install
-      run: |
-        ARCH=$(uname -m)
-        if [ "$ARCH" = "x86_64" ]; then
-          BINARY="mrpack-install-linux"
-        elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ]; then
-          BINARY="mrpack-install-linux-arm64"
-        else
-          echo "Unsupported architecture: $ARCH"
-          exit 1
-        fi
-        
-        wget -q "https://github.com/nothub/mrpack-install/releases/latest/download/$BINARY" -O mrpack-install
-        chmod +x mrpack-install
-        sudo mv mrpack-install /usr/local/bin/
-    
-    - name: Install tq (TOML query tool)
-      run: cargo install tomlq
-    
-    - name: Get version from pack.toml
-      id: version
-      run: |
-        VERSION=$(tq -f pack/pack.toml 'version' | sed 's/"//g')
-        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-        echo "Building version: $VERSION"
-    
-    - name: Build all targets
-      run: ./make.sh all
-    
-    - name: Create distribution zips
-      run: |
-        cd dist/client
-        zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-client.zip .
-        cd ../server
-        zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-server.zip .
-        cd ../..
-    
-    - name: Generate checksums
-      run: |
-        cd dist
-        sha256sum layer_1-*.mrpack layer_1-*.zip > checksums.txt
-        cat checksums.txt
-    
-    - name: Create Release
-      id: create_release
-      uses: shogo82148/actions-create-release@v1
-      with:
-        tag_name: ${{ github.ref_name }}
-        release_name: layer_1 ${{ steps.version.outputs.VERSION }}
-        draft: true
-        prerelease: ${{ contains(steps.version.outputs.VERSION, 'alpha') || contains(steps.version.outputs.VERSION, 'beta') }}
-        body: |
-          ## layer_1 ${{ steps.version.outputs.VERSION }}
-          
-          ### Downloads
-          - **Modpack**: `layer_1-${{ steps.version.outputs.VERSION }}.mrpack` - For importing into launchers
-          - **Client**: `layer_1-${{ steps.version.outputs.VERSION }}-client.zip` - Pre-installed client mods
-          - **Server**: `layer_1-${{ steps.version.outputs.VERSION }}-server.zip` - Pre-installed server mods
-          
-          ### Installation
-          
-          #### For Players (Recommended)
-          1. Download the `.mrpack` file
-          2. Import into your launcher (Prism Launcher, MultiMC, etc.)
-          3. Launch and play!
-          
-          #### Manual Installation
-          1. Download the appropriate zip (client or server)
-          2. Extract to your `.minecraft/mods` folder (client) or server mods folder
-          3. Ensure you have Fabric Loader 0.16.14+ installed
-          
-          ### Changes
-          _Please add changelog here before publishing_
-          
-          ### Checksums
-          See `checksums.txt` for SHA256 verification
-    
-    - name: Upload release assets
-      uses: shogo82148/actions-upload-release-asset@v1
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: |
-          dist/layer_1-${{ steps.version.outputs.VERSION }}.mrpack
-          dist/layer_1-${{ steps.version.outputs.VERSION }}-client.zip
-          dist/layer_1-${{ steps.version.outputs.VERSION }}-server.zip
-          dist/checksums.txt
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Packwiz Environment
+        uses: ./.github/actions/setup-packwiz
+
+      - name: Get Pack Version
+        id: version
+        uses: ./.github/actions/get-version
+
+      - name: Build all targets
+        run: ./make.sh all
+
+      - name: Copy packwiz installer to client
+        run: cp installer/packwiz-installer-bootstrap.jar dist/client/
+
+      - name: Create distribution zips
+        run: |
+          cd dist/client
+          zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-client.zip .
+          cd ../server
+          zip -r ../layer_1-${{ steps.version.outputs.VERSION }}-server.zip .
+          cd ../..
+
+      - name: Generate checksums
+        run: |
+          cd pack
+          sha256sum pack.toml > ../dist/checksums.txt
+          cd ../dist
+          sha256sum layer_1-*.mrpack layer_1-*.zip >> checksums.txt
+          cat checksums.txt
+
+      - name: Create Release
+        id: create_release
+        uses: shogo82148/actions-create-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: layer_1 ${{ steps.version.outputs.VERSION }}
+          draft: true
+          prerelease: ${{ contains(steps.version.outputs.VERSION, 'alpha') || contains(steps.version.outputs.VERSION, 'beta') }}
+          body: |
+            ## 📦 layer_1 ${{ steps.version.outputs.VERSION }}
+
+            ### 🚀 Downloads
+            - **📦 Modpack**: `layer_1-${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
+            - **💻 Client**: `layer_1-${{ steps.version.outputs.VERSION }}-client.zip` - Pre-installed client mods  
+            - **🖥️ Server**: `layer_1-${{ steps.version.outputs.VERSION }}-server.zip` - Pre-installed server mods
+            - **⚙️ Config**: `pack.toml` - Update checker (stable URL)
+
+            ### 🎮 Quick Start
+            1. Download the `.mrpack` file
+            2. Import into your launcher (Prism, MultiMC, etc.)
+            3. Launch and play!
+
+            ### 🔄 Auto-Updates (Advanced)
+            For automatic updates, add this pre-launch command in your launcher:
+            ```
+            "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://github.com/mannie-exe/layer_1/releases/latest/download/pack.toml
+            ```
+
+            ### 🔐 Checksums
+            See `checksums.txt` for SHA256 verification
+
+      - name: Upload release assets
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: |
+            pack/pack.toml
+            dist/layer_1-${{ steps.version.outputs.VERSION }}.mrpack
+            dist/layer_1-${{ steps.version.outputs.VERSION }}-client.zip
+            dist/layer_1-${{ steps.version.outputs.VERSION }}-server.zip
+            dist/checksums.txt
