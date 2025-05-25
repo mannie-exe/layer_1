@@ -1,48 +1,48 @@
 {
-  "breakInCreative": true,
-  "enchantment": {
-    "requireEnchantment": false
+  "trees": {
+    "allowedLogs": [],
+    "deniedLogs": [],
+    "allowedLeaves": [],
+    "allowedNonDecayLeaves": [],
+    "deniedLeaves": [],
+    "breakMode": "INSTANTANEOUS",
+    "detectionMode": "ABOVE_CUT",
+    "maxScanSize": 4096,
+    "maxSize": 4096,
+    "maxLeafDistanceFromLog": 32,
+    "maxSizeAction": "CUT",
+    "breakOrder": "CLOSEST_FIRST",
+    "minimumLeavesAroundRequired": 0,
+    "includePersistentLeavesInRequiredCount": false,
+    "treeBreaking": true,
+    "leavesBreaking": true,
+    "leavesBreakingForceRadius": 0,
+    "allowMixedLogs": true,
+    "breakNetherTreeWarts": true,
+    "breakMangroveRoots": true,
+    "searchAreaRadius": -1,
+    "allowedAdjacentBlocks": [],
+    "adjacentStopMode": "STOP_BRANCH",
+    "spawnItemsAtBreakPoint": false
   },
-  "lootInCreative": true,
-  "notificationMode": "ACTION_BAR",
+  "tools": {
+    "allowed": [],
+    "denied": [],
+    "durabilityMode": "NORMAL",
+    "ignoreTools": true,
+    "damageMultiplicand": 1.0,
+    "damageRounding": "ROUND_DOWN",
+    "speedMultiplicand": 0.0,
+    "forceToolUsage": false
+  },
   "player": {
     "allowedTags": []
   },
-  "sneakMode": "IGNORE",
-  "tools": {
-    "allowed": [],
-    "damageMultiplicand": 1,
-    "damageRounding": "ROUND_DOWN",
-    "denied": [],
-    "durabilityMode": "NORMAL",
-    "forceToolUsage": false,
-    "ignoreTools": true,
-    "speedMultiplicand": 0
+  "enchantment": {
+    "requireEnchantment": false
   },
-  "trees": {
-    "adjacentStopMode": "STOP_BRANCH",
-    "allowedAdjacentBlocks": [],
-    "allowedLeaves": [],
-    "allowedLogs": [],
-    "allowedNonDecayLeaves": [],
-    "allowMixedLogs": true,
-    "breakMangroveRoots": true,
-    "breakMode": "FALL_ALL_BLOCK",
-    "breakNetherTreeWarts": true,
-    "breakOrder": "CLOSEST_FIRST",
-    "deniedLeaves": [],
-    "deniedLogs": [],
-    "detectionMode": "ABOVE_CUT",
-    "includePersistentLeavesInRequiredCount": false,
-    "leavesBreaking": true,
-    "leavesBreakingForceRadius": 0,
-    "maxLeafDistanceFromLog": 32,
-    "maxScanSize": 4096,
-    "maxSize": 4096,
-    "maxSizeAction": "CUT",
-    "minimumLeavesAroundRequired": 0,
-    "searchAreaRadius": -1,
-    "spawnItemsAtBreakPoint": false,
-    "treeBreaking": true
-  }
+  "sneakMode": "IGNORE",
+  "breakInCreative": true,
+  "lootInCreative": true,
+  "notificationMode": "ACTION_BAR"
 }

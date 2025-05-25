@@ -1,0 +1,15 @@
+{
+  "itemCraftCount": {
+    "item.gliding.diamond_glider": 1,
+    "block.simple_copper_pipes.copper_pipe": 64,
+    "block.alloy_forgery.polished_blackstone_forge_controller": 2,
+    "item.minecraft.stick": 1
+  },
+  "lastCraftedItem": "block.simple_copper_pipes.copper_pipe",
+  "categoryCraftCount": {
+    "Controllers": 2,
+    "Sticks": 1,
+    "Gliders": 1,
+    "Pipes": 64
+  }
+}

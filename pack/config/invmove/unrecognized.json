@@ -1,0 +1,25 @@
+{
+  "allowMovement": {
+    "net.minecraft.class_433": true,
+    "dev.emi.emi.screen.RecipeScreen": true,
+    "com.terraformersmc.modmenu.gui.ModsScreen": true,
+    "net.minecraft.class_429": true,
+    "me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen": true,
+    "net.minecraft.class_5375": true,
+    "io.github.mortuusars.exposure.client.gui.screen.PhotographScreen": true,
+    "wraith.alloyforgery.client.AlloyForgeScreen": true,
+    "me.pahan3568.crumbling_hearts.config.ModMenuIntegration$ConfigScreen": true,
+    "io.wispforest.accessories.client.gui.ScreenVariantSelectionScreen": true,
+    "io.wispforest.accessories.client.gui.AccessoriesExperimentalScreen": true,
+    "com.tiviacz.travelersbackpack.client.screens.BackpackScreen": true,
+    "net.minecraft.class_458": true,
+    "com.blamejared.controlling.client.NewKeyBindsScreen": true,
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
+    "net.minecraft.class_407": true
+  },
+  "hideBackground": {
+    "dev.emi.emi.screen.RecipeScreen": true,
+    "io.github.mortuusars.exposure.client.gui.screen.PhotographScreen": true,
+    "com.tiviacz.travelersbackpack.client.screens.BackpackScreen": true
+  }
+}
