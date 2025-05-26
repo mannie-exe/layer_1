@@ -4,10 +4,10 @@ layer_1 is a carefully curated Fabric modpack that enhances Minecraft while pres
 
 ## Overview
 
-- **Version**: 0.1.1-alpha
+- **Version**: 0.4.0-alpha
 - **Minecraft**: 1.21.1
 - **Mod Loader**: Fabric 0.16.14
-- **Total Mods**: 226
+- **Total Mods**: 239
 - **Focus**: Performance, Visual Enhancement, Quality of Life, Vanilla+
 
 ## Key Features
@@ -52,57 +52,59 @@ Extensive decorative options through Supplementaries, Handcrafted, and more - pe
 
 ### For Players
 
-1. Install a Fabric-compatible launcher (Prism Launcher, MultiMC, etc.)
-2. Import the modpack using the `.mrpack` file from releases
-3. Allocate 4-8GB RAM depending on desired performance
+#### Option 1: Modpack File (Recommended)
+1. Download the `.mrpack` file from [releases](https://github.com/mannie-exe/layer_1/releases)
+2. Import into your launcher (Prism, MultiMC, ATLauncher, etc.)
+3. Allocate 4-8GB RAM for optimal performance
 4. Launch and enjoy!
 
-#### 🔄 Auto-Updates (Optional)
-For automatic updates, add this pre-launch command in your launcher:
-```
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://github.com/mannie-exe/layer_1/releases/latest/download/pack.toml
-```
-This will automatically download new mods and updates before each launch.
+#### Option 2: Instance Import (Custom Icon)
+1. Download the `.zip` file from [releases](https://github.com/mannie-exe/layer_1/releases)
+2. Extract and import the instance folder into your launcher
+3. The instance includes our custom icon and auto-installs mods on first launch
+4. Allocate 4-8GB RAM for optimal performance
 
 ### For Developers
 
-> ⚠️ `./make.sh (server|client|all)`
-> will auto-clean the appropriate build directory before building.
-
 ```bash
 # Clone the repository
-git clone https://github.com/zer0cell/layer_1.git
+git clone https://github.com/mannie-exe/layer_1.git
 cd layer_1
 
-# Create modpack file
-./make.sh pack
+# Build modpack file (for distribution)
+./make.sh mrpack
 
-# Build server version
-./make.sh server
+# Build instance zip (includes custom icon + bootstrapper)
+./make.sh instance
 
-# Build client version
-./make.sh client
-
-# Build everything (includes clean)
+# Build everything for release
 ./make.sh all
 ```
 
 ## Build System
 
-layer_1 uses a custom build system built on top of [packwiz](https://github.com/packwiz/packwiz):
+layer_1 uses a streamlined build system built on top of [packwiz](https://github.com/packwiz/packwiz):
 
-- `make.sh` - Main build script with multiple targets
-- `pack.sh` - Quick pack export script
-- Supports client, server, and modpack builds
-- Clean separation of build artifacts in `dist/`
+- **`make.sh`** - Main build script with multiple targets
+- **`pack.sh`** - Quick pack export script  
+- **Automated CI/CD** - GitHub Actions handle releases
+- **Clean separation** - All build artifacts organized in `dist/`
 
-### Build Targets
+### Primary Build Targets
 
-- `client` - Build client-side mod installation
-- `server` - Build server-side mod installation
-- `pack` / `mrpack` - Create distributable modpack file
-- `clean` - Clean build directories
-- `all` - Build everything
+- **`mrpack`** - Create Modrinth-compatible modpack file
+- **`instance`** - Build launcher instance with custom icon and bootstrapper
+- **`clean`** - Clean build directories
+- **`all`** - Build both mrpack and instance for release
+
+### Distribution Flow
+
+```bash
+./make.sh mrpack     # → dist/layer_1-v0.4.0.mrpack
+./make.sh instance   # → dist/layer_1-v0.4.0.zip
+```
+
+The instance build automatically includes the packwiz bootstrapper, allowing for one-click mod installation while preserving custom icons and configs.
 
 ## System Requirements
 

@@ -6,8 +6,8 @@ POSSIBLE_MAKES=(
   "clean"
   "client"
   "server"
-  "pack"
   "mrpack"
+  "instance"
   "all"
 )
 
@@ -20,7 +20,7 @@ if [ "$1" ]; then
 
   MAKE="$1"
 else
-  MAKE="client"
+  MAKE="mrpack"
 fi
 
 PACKFILE="pack/pack.toml"
@@ -35,7 +35,7 @@ VERSION=$(tq -f $PACKFILE 'version' | sed 's/"//g')
 echo "♻️ Using pack file: $PACKFILE (version: $VERSION)"
 packwiz --pack-file $PACKFILE refresh
 
-if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
+if [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
   echo "📦 Packing modpack (Modrinth)"
 
   packwiz --pack-file $PACKFILE \
@@ -48,7 +48,7 @@ if [ "$MAKE" = "pack" ] || [ "$MAKE" = "mrpack" ] || [ "$MAKE" = "all" ]; then
 fi
 
 function clean() {
-  if [ "$1" != "client" ] && [ "$1" != "server" ]; then
+  if [ "$1" != "client" ] && [ "$1" != "server" ] && [ "$1" != "instance" ]; then
     echo "‼️ Invalid side: $1"
     exit 1
   fi
@@ -66,12 +66,51 @@ function clean() {
     +
 }
 
+# Handle instance build
+if [ "$MAKE" = "instance" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
+
+  clean instance
+  rm -f dist/layer_1-v${VERSION}.zip
+
+  if [ "$MAKE" = "instance" ] || [ "$MAKE" = "all" ]; then
+    cp -r instance-template/* dist/instance/
+
+    mkdir -p dist/instance/.minecraft
+    cp installer/packwiz-installer-bootstrap.jar dist/instance/.minecraft
+    cp -r pack/* dist/instance/.minecraft
+
+    MRPACK_FILE="dist/layer_1-v${VERSION}.mrpack"
+
+    if [ -f "$MRPACK_FILE" ]; then
+      TEMP_DIR="dist/temp-mrpack-extract"
+      mkdir -p "$TEMP_DIR"
+      unzip -q "$MRPACK_FILE" -d "$TEMP_DIR"
+
+      if [ -d "$TEMP_DIR/overrides" ]; then
+        cp -r "$TEMP_DIR/overrides"/* dist/instance/.minecraft/
+      else
+        echo "⚠️ No overrides folder found in mrpack"
+      fi
+
+      rm -rf "$TEMP_DIR"
+    else
+      echo "⚠️ mrpack file not found: $MRPACK_FILE"
+      echo "💡 Run './make.sh mrpack' first to generate the mrpack"
+      exit 1
+    fi
+
+    zip -r0 dist/layer_1-v${VERSION}.zip dist/instance -x '*.gitkeep'
+
+    echo "✅ Instance export ready at dist/layer_1-v${VERSION}.zip"
+  fi
+fi
+
 # Handle server build
 if [ "$MAKE" = "server" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
 
   clean server
 
-  if [ "$MAKE" = "server" ] || [ "$MAKE" = "all" ]; then
+  if [ "$MAKE" = "server" ]; then
     MC_VERSION=$(tq -f $PACKFILE 'versions.minecraft' | sed 's/"//g')
     FABRIC_VERSION=$(tq -f $PACKFILE 'versions.fabric' | sed 's/"//g')
 
@@ -97,7 +136,7 @@ if [ "$MAKE" = "client" ] || [ "$MAKE" = "clean" ] || [ "$MAKE" = "all" ]; then
 
   clean client
 
-  if [ "$MAKE" = "client" ] || [ "$MAKE" = "all" ]; then
+  if [ "$MAKE" = "client" ]; then
     pushd dist/client >/dev/null
 
     java -jar ../../installer/packwiz-installer-bootstrap.jar \

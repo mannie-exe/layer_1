@@ -88,6 +88,10 @@ dist/client/*
 dist/server/*
 !dist/server/.gitkeep
 
+# Launcher exports
+dist/launcher/*
+!dist/server/.gitkeep
+
 # CurseForge zip files
 dist/*.zip
 

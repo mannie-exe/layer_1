@@ -23,27 +23,15 @@ jobs:
       - name: Get Pack Version
         id: version
         uses: ./.github/actions/get-version
-
-      - name: Build all targets
-        run: ./make.sh all
-
-      - name: Copy packwiz installer to client
-        run: cp installer/packwiz-installer-bootstrap.jar dist/client/
-
-      - name: Create distribution zips
-        run: |
-          cd dist/client
-          zip -r ../layer_1-v${{ steps.version.outputs.VERSION }}-client.zip .
-          cd ../server
-          zip -r ../layer_1-v${{ steps.version.outputs.VERSION }}-server.zip .
-          cd ../..
+      - name: Build Modrinth export
+        run: ./make.sh mrpack
+      - name: Build instance export
+        run: ./make.sh instance
 
       - name: Generate checksums
         run: |
-          cd pack
-          sha256sum pack.toml > ../dist/checksums.txt
-          cd ../dist
-          sha256sum layer_1-*.mrpack layer_1-*.zip >> checksums.txt
+          cd dist
+          sha256sum layer_1-v*.mrpack layer_1-v*.zip >> checksums.txt
           cat checksums.txt
 
       - name: Create Release
@@ -53,28 +41,21 @@ jobs:
           tag_name: ${{ github.ref_name }}
           release_name: v${{ steps.version.outputs.VERSION }}
           draft: true
-          prerelease: false # forced false to provide a stable URL to latest assets
+          prerelease: false
           body: |
-            ## layer_1 v${{ steps.version.outputs.VERSION }}
+            ## layer_1
+            ### v${{ steps.version.outputs.VERSION }}
 
-            ### 🚀 Downloads
-            - **Config**: `pack.toml` - Update checker (stable URL)
+            #### 🚀 Downloads
             - **Modpack**: `layer_1-v${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
-            - **Client**: `layer_1-v${{ steps.version.outputs.VERSION }}-client.zip` - Pre-installed client mods
-            - **Server**: `layer_1-v${{ steps.version.outputs.VERSION }}-server.zip` - Pre-installed server mods
+            - **Instance**: `layer_1-v${{ steps.version.outputs.VERSION }}.zip` - Launcher zip with custom icon
 
-            ### 🎮 Quick Start
-            1. Download the `.mrpack` file
+            #### 🎮 Quick Start
+            1. Download either the `.mrpack` or `.zip` file
             2. Import into your launcher (Prism, MultiMC, etc.)
             3. Launch and play!
 
-            ### 🔄 Auto-Updates (Advanced)
-            For automatic updates, add this pre-launch command in your launcher:
-            ```
-            "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://github.com/mannie-exe/layer_1/releases/latest/download/pack.toml
-            ```
-
-            ### 🔐 Checksums
+            #### 🔐 Checksums
             See `checksums.txt` for SHA256 verification
 
       - name: Upload release assets
@@ -82,8 +63,6 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: |
-            pack/pack.toml
             dist/layer_1-v${{ steps.version.outputs.VERSION }}.mrpack
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}-client.zip
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}-server.zip
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}.zip
             dist/checksums.txt
