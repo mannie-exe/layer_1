@@ -89,8 +89,9 @@ dist/server/*
 !dist/server/.gitkeep
 
 # Launcher exports
-dist/launcher/*
-!dist/server/.gitkeep
+dist/instance/*
+dist/instance/.minecraft
+!dist/instance/.gitkeep
 
 # CurseForge zip files
 dist/*.zip

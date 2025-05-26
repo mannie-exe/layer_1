@@ -667,6 +667,10 @@ file = "config/nyfsspiders-common.toml"
 hash = "60820a39813205cc37dbc9ee1b47ac73e8a8e454f98e060e3db37d46835a4834"
 
 [[files]]
+file = "config/openloader/data/William Wythers' Overhauled Overworld v2.4.3 (with Larion Fix).zip"
+hash = "8c7425c9dea24f8b83d79fd3de1beb2dfc5f57ae4a0462f889313d02905d63ce"
+
+[[files]]
 file = "config/openloader/data/cliffs-and-coves.pw.toml"
 hash = "4c51a575c544d78ac5f279bbca7f09a91c3606feed5be071d1e792706f256f98"
 metafile = true
@@ -674,11 +678,6 @@ metafile = true
 [[files]]
 file = "config/openloader/data/navigable-rivers.pw.toml"
 hash = "25535af97648d5b7a3661b14ca71e42a605c0c55574cacaa68319d3a45162f07"
-metafile = true
-
-[[files]]
-file = "config/openloader/data/remove-terralith-intro-message.pw.toml"
-hash = "61afee8a5c7f1ee206d67e54ed74acbe344876ca2bc43b6f7101c5b413426762"
 metafile = true
 
 [[files]]
@@ -1493,11 +1492,6 @@ hash = "a0a4120479b3a00265797ba4ab4b351e7ea6730f1a0394d069da0d92165a3bd9"
 metafile = true
 
 [[files]]
-file = "mods/geophilic.pw.toml"
-hash = "87d16e6f43df61a8fb025a9977343bc2f026570d198f48d82ef087be0d9e29eb"
-metafile = true
-
-[[files]]
 file = "mods/gipples-galore.pw.toml"
 hash = "22a87d60e0ca2d030a5593827ae4d8427da90a39b07442b51a2704d057f70210"
 metafile = true
@@ -2063,16 +2057,6 @@ hash = "fcd92853a728b92cc82d6de0adcb42b0463c6825069e30a07c707fc571dc119a"
 metafile = true
 
 [[files]]
-file = "mods/tectonic.pw.toml"
-hash = "257596cef0449db3c18e4821b6aaaa5a9dc3f21a885eea88ecea7d740e61073d"
-metafile = true
-
-[[files]]
-file = "mods/terralith.pw.toml"
-hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
-metafile = true
-
-[[files]]
 file = "mods/tidal-towns.pw.toml"
 hash = "0cbfee517ef794590c79f407c060a42f9719e8533f730411761d3d429463af03"
 metafile = true
@@ -2170,11 +2154,6 @@ metafile = true
 [[files]]
 file = "mods/withering-heights.pw.toml"
 hash = "fdbe941abdcbcd464c4413681aab137e1065c2e8181d17627c4e9f66cf1a2aee"
-metafile = true
-
-[[files]]
-file = "mods/wwoo.pw.toml"
-hash = "3508119ff0d807bae554d54c1a0bc94182fcd877f83a5b7142d3461815f5b466"
 metafile = true
 
 [[files]]
