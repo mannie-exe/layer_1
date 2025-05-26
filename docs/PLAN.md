@@ -4,6 +4,8 @@
 
 This document outlines the planned enhancements for the Layer 1 modpack build system, focusing on profile management, multi-version support, and improved developer experience while maintaining packwiz as the core backend.
 
+**Current Status**: Layer 1 v0.4.0-alpha successfully implemented worldgen optimization, removing Terralith/Tectonic conflicts and achieving stable 4vCPU/8GB server performance with Larion + WWOO combination.
+
 ## Core Design Principles
 
 1. **Packwiz as Foundation**: Continue leveraging packwiz for mod management, dependency resolution, and pack distribution
@@ -257,16 +259,18 @@ pub trait VersionManager {
 ### 5. Integration Roadmap
 
 #### Phase 1: Foundation (Immediate)
-- [ ] Create profile configuration schema
-- [ ] Implement basic profile resolution
-- [ ] Update build scripts to support profiles
-- [ ] Add profile validation
+- [x] ~~Create profile configuration schema~~ (Deferred for v0.5.0)
+- [x] Enhanced build system with instance management
+- [x] Legal distribution system with packwiz bootstrapper
+- [x] CI/CD pipeline optimization
+- [x] Worldgen performance optimization completed
 
 #### Phase 2: Multi-Version (Short-term)
 - [ ] Implement version directory structure
-- [ ] Create mod mapping system
+- [ ] Create mod mapping system for 1.20.4 support
 - [ ] Add version-aware build commands
 - [ ] Implement basic migration tools
+- [ ] Evaluate tech mod integration (Oritech focus)
 
 #### Phase 3: Rust Tool MVP (Medium-term)
 - [ ] Create CLI with profile management
@@ -287,6 +291,8 @@ pub trait VersionManager {
 3. **User Choice**: Players can select profiles based on their system capabilities
 4. **Developer Experience**: Powerful tools for pack development and testing
 5. **Version Support**: Easier to maintain packs across Minecraft updates
+6. **Performance Focus**: Proven ability to optimize for server constraints
+7. **Legal Compliance**: No mod redistribution concerns with bootstrapper system
 
 ## Technical Considerations
 

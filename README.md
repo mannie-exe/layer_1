@@ -1,6 +1,6 @@
 # layer_1 - A Vanilla+ Minecraft Modpack
 
-layer_1 is a carefully curated Fabric modpack that enhances Minecraft while preserving its vanilla essence. With over 220 mods focused on performance, visual polish, and quality of life improvements, layer_1 creates the Minecraft experience you always wanted.
+layer_1 is a carefully curated Fabric modpack that enhances Minecraft while preserving its vanilla essence. With 239 mods focused on performance, visual polish, and quality of life improvements, layer_1 creates the Minecraft experience you always wanted.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Subtle visual improvements including animations, particles, and shader support t
 Thoughtful additions like EMI, Jade, and inventory improvements that reduce tedium without overwhelming the vanilla experience.
 
 ### 🌍 Enhanced World
-Overhauled terrain generation with Terralith, new structures, and biome improvements that feel like natural extensions of vanilla.
+Optimized terrain generation with Larion and William Wythers' Overhauled Overworld, plus new structures and biome improvements that feel like natural extensions of vanilla.
 
 ### 🏗️ Builder's Paradise
 Extensive decorative options through Supplementaries, Handcrafted, and more - perfect for creative builders.
@@ -45,7 +45,7 @@ Extensive decorative options through Supplementaries, Handcrafted, and more - pe
 ## Documentation
 
 - **[Mod Overview](docs/MODS.md)** - Feature-grouped summary of included mods
-- **[Complete Mod List](docs/MOD_LIST.md)** - Full alphabetical listing with all 255 additions
+- **[Complete Mod List](docs/MOD_LIST.md)** - Full alphabetical listing with all 265 additions
 - **[Development Plans](docs/PLAN.md)** - Future enhancements and architecture plans
 
 ## Quick Start
@@ -100,8 +100,8 @@ layer_1 uses a streamlined build system built on top of [packwiz](https://github
 ### Distribution Flow
 
 ```bash
-./make.sh mrpack     # → dist/layer_1-v0.4.0.mrpack
-./make.sh instance   # → dist/layer_1-v0.4.0.zip
+./make.sh mrpack     # → dist/layer_1-v0.4.0-alpha.mrpack
+./make.sh instance   # → dist/layer_1-v0.4.0-alpha.zip
 ```
 
 The instance build automatically includes the packwiz bootstrapper, allowing for one-click mod installation while preserving custom icons and configs.

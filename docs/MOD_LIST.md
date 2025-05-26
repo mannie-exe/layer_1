@@ -11,238 +11,240 @@ This document contains a complete alphabetical listing of all mods, resource pac
 5. **Adventure Dungeons** - Adds various dungeons to explore
 6. **Alloy Forgery** - Adds alloy creation and metal working
 7. **Almanac** - In-game book with useful information
-8. **AppleSkin** - Food/hunger-related HUD improvements
-9. **Architectury API** - An intermediary api aimed at easing development of multiplatform mods
-10. **Artifacts** - Adds various powerful items
-11. **Attack Through Grass** - Allows hitting entities through grass
-12. **Auditory Continued** - Updates sounds to be more realistic
-13. **Aurae!** - Mystical particles and ambience
-14. **Balm** - Abstraction Layer (but not really) for Balamod
-15. **Beautified Chat [Client]** - Improves chat appearance on client
-16. **Beautified Chat [Server]** - Improves chat appearance on server
-17. **Better Climbing** - Makes climbing more interactive
-18. **Better Combat** - Improves combat mechanics
-19. **Better Command Block UI** - Enhanced command block interface
-20. **Better Safe Bed** - Prevents monsters from spawning near your bed
-21. **Better Third Person** - Improves third person camera
-22. **Bedrock Inventory Animations** - Adds Bedrock Edition inventory animations
-23. **Bookshelf** - Library mod for code reuse
-24. **Brainier Bees** - Makes bees smarter
-25. **Concurrent Chunk Management Engine (Fabric)** - Performance improvements for chunk generation
-26. **Camera Utils** - Camera control utilities
-27. **Camera Overhaul** - More immersive camera movements
-28. **Cardinal Components API** - A data attachment API
-29. **Carry On** - Pick up and carry blocks/entities
-30. **Chat Heads** - Adds player heads to chat messages
-31. **Chat Animation [Smooth Chat]** - Smooth chat animations
-32. **Chat Patches** - Various chat improvements
-33. **CICADA** - Client-side animation and display library
-34. **CIT Resewn** - Custom Item Textures support
-35. **Clean Tooltips** - Cleaner item tooltips
-36. **Client Tweaks** - Various client-side tweaks
-37. **Client Sort** - Inventory sorting improvements
-38. **Cloth Config API** - Configuration library for mods
-39. **Clumps** - Groups XP orbs together
-40. **Cobweb** - Framework for building extensible commands
-41. **Collective** - Shared library with common code
-42. **Companion 🐕** - Adds pet companions
-43. **Configuration** - Library for creating config files
-44. **Continuity** - Connected textures support
-45. **Controlling** - Better controls management
-46. **Cool Rain** - Better rain effects
-47. **Copper Rails** - Adds copper rail variants
-48. **CoroUtil** - Utility library
-49. **Craftable Saddles** - Adds saddle crafting recipe
-50. **Craftable Nametag** - Adds nametag crafting recipe
-51. **CraftSense** - Shows recipe availability
-52. **Crawl** - Crawling animation
-53. **Creeper Overhaul** - Biome-specific creeper variants
-54. **Crumbling Hearts** - Regeneration only affects last 3 hearts
-55. **Cull Leaves** - Performance optimization for leaves
-56. **Dark Loading Screen** - Darker loading screens
-57. **Deeper and Darker** - New dimension and content
-58. **Ding** - Plays a sound when Minecraft loads
-59. **Do a Barrel Roll** - Elytra tricks and rolls
-60. **Draggable Lists** - Draggable resource/data pack lists
-61. **Dungeons and Taverns** - Adds dungeons and taverns
-62. **Durability Tooltip** - Shows durability in tooltips
-63. **Dynamic FPS** - Reduces FPS when Minecraft is not focused
-64. **Dynamic Surroundings** - Enhanced environmental effects
-65. **Easy Anvils** - Improved anvil mechanics
-66. **Easy Magic** - Easier enchanting
-67. **Enhanced Block Entities** - Performance optimizations for block entities
-68. **Economical Villager Trading** - Improves villager trading
-69. **Effective** - Adds splashes and other effects
-70. **Elytra Slot** - Dedicated elytra slot
-71. **EMI** - Item and recipe viewer
-72. **Enchanted Vertical Slabs** - Craftable vertical slabs
-73. **Enchantment Descriptions** - Adds descriptions to enchantments
-74. **Endercon** - End dimension additions
-75. **[EMF] Entity Model Features** - Custom entity model support
-76. **Entity Pin Cushions** - Shows damage on entities
-77. **Entity Culling** - Stops rendering entities that are not visible
-78. **[ETF] Entity Texture Features** - Custom entity texture support
-79. **Explorify** - Vanilla-style additions
-80. **Explosive Enhancement** - Better explosion effects
-81. **Exposure** - Camera and screenshot improvements
-82. **Exposure: Polaroid** - Instant camera and photos
-83. **Fabric API** - Essential hooks for modding with Fabric
-84. **Fabric Language Kotlin** - Kotlin support for Fabric
-85. **Fadeless** - Removes fade-in animations
-86. **FallingTree** - Makes trees fall when chopped
-87. **Faster Random** - Performance optimization
-88. **FerriteCore** - Memory usage optimizations
-89. **First-person Model** - See your body in first person
-90. **Fishing Real** - Improved fishing mechanics
-91. **Fog** - Fog atmosphere effects
-92. **Food Effect Tooltips** - Shows food effects in tooltips
-93. **Forge Config API Port** - Forge config API for Fabric
-94. **FPS - Display** - Shows FPS in corner
-95. **FrozenLib** - Library for frozen-themed mods
-96. **FSit** - Sit on stairs and slabs
-97. **Fzzy Config** - Configuration library
-98. **Geckolib** - Animation engine for entities
-99. **Geophilic** - Vanilla-style biome improvements
-100. **Gipples Galore** - Glowing nipple creatures
-101. **Gliding** - Improvements to elytra gliding
-102. **GlitchCore** - Library for technical mods
-103. **Handcrafted** - Furniture and decorations
-104. **Hardcore Revival** - Second chance in hardcore
-105. **Harvest with ease** - Right-click to harvest crops
-106. **Hearths** - Cozy resting points
-107. **Held Item Info** - Shows held item information
-108. **Horse Buff** - Improved horses
-109. **iChunUtil** - Utility library
-110. **Toni's Immersive Lanterns** - Better lantern placement
-111. **Immersive UI** - HUD improvements
-112. **ImmersiveThunder** - Realistic thunder sounds
-113. **Improved Village Placement** - Better village generation
-114. **Indium** - Sodium addon compatibility
-115. **Interdimensional Map Markers** - Maps work across dimensions
-116. **Inventory Essentials** - Inventory improvements
-117. **Inventory Totem** - Totems work from inventory
-118. **InvMove** - Move while in inventories
-119. **InvMoveCompats** - Compatibility for InvMove
-120. **Iris Shaders** - Shader support
-121. **Item Descriptions** - Adds item descriptions
-122. **Jade 🔍** - Shows information about what you're looking at
-123. **Kiwi 🥝** - Library mod
-124. **KleeSlabs** - Break only half of double slabs
-125. **Konkrete** - Library mod
-126. **Krypton** - Network optimizations
-127. **Larion World Generation** - World generation features
-128. **Liberty's Villagers** - Villager improvements
-129. **Lithium** - General-purpose optimizations
-130. **Lithostitched** - Library for worldgen
-131. **Let Me Despawn** - Mobs can despawn properly
-132. **Lootr** - Individual loot for each player
-133. **Luna Slimes** - New slime variants
-134. **Make Bubbles Pop** - Bubble columns pop bubbles
-135. **MasterCutter** - Stonecutter improvements
-136. **Melody** - Decorative music discs
-137. **MidnightLib** - Library for config screens
-138. **Modern Networking** - Networking library
-139. **Mod Menu** - Adds a mod menu to view installed mods
-140. **Moonlight Lib** - Dynamic assets and registration
-141. **Mouse Tweaks** - Mouse inventory improvements
-142. **M.R.U** - Mineblock's Repeated Utilities
-143. **Mystical Oak Tree** - New tree type
-144. **NetherPortalFix** - Fixes nether portal linking
-145. **Nightosphere** - Sky and atmosphere improvements
-146. **No Animal Tempt Delay** - Removes animal feeding cooldown
-147. **Noisium** - Worldgen performance optimizations
-148. **Northern Compass** - Compass improvements
-149. **Not Enough Animations** - More player animations
-150. **FabricSkyboxes** - Custom skyboxes
-151. **Nyf's Spiders** - Spider improvements
-152. **OctoLib** - Library for GUI creation
-153. **OmniLib** - Omni-directional library utilities
-154. **Open Loader** - Load resources/data from additional sources
-155. **oωo (owo-lib)** - General utility library
-156. **Packet Fixer** - Fixes packet size issues
-157. **Particle Effects** - Adds particle effects
-158. **Particle Interactions** - Interactive particles
-159. **Particle Rain** - Weather particle effects
-160. **Passive Shield** - Shield improvements
-161. **Peek** - Preview shulker box contents
-162. **Persistent Parrots** - Parrots stay on shoulder
-163. **PetProtect** - Pet protection features
-164. **Pick Up Notifier** - Shows what you pick up
-165. **Text Placeholder API** - Text placeholder support
-166. **playerAnimator** - Animation API
-167. **Pocketwatch** - Time control item
-168. **Polymorph** - Solves recipe conflicts
-169. **Polytone** - Resource pack enhancements
-170. **Prickle** - Sweet berry bush improvements
-171. **Puzzle** - Optimization and QoL features
-172. **Puzzles Lib** - Library for Fuzs mods
-173. **Magic mirror** - Teleportation item
-174. **qraftyfied: STRUCTURES** - Structure improvements
-175. **qraftyfied: Industrial Structures** - Industrial-themed structures
-176. **Raised** - Raises HUD elements
-177. **Reacharound** - Place blocks behind blocks
-178. **Realistic Fire Spread** - More realistic fire
-179. **Redstone Pen** - Draw redstone lines
-180. **Reese's Sodium Options** - Better Sodium options screen
-181. **Reimagined Trims** - Better armor trims
-182. **Reinforced Barrels** - Stronger barrel storage
-183. **Reinforced Chests** - Stronger chest storage
-184. **Reinforced Shulker Boxes** - Stronger shulker box storage
-185. **Resourceful Config** - Configuration library
-186. **Resourceful Lib** - General library
-187. **Respawnable Pets** - Pets can respawn
-188. **Ribbits** - Frog improvements
-189. **Scorched** - Nether expansion
-190. **Scribble** - Drawing on blocks
-191. **Sculk Expansion** - More sculk features
-192. **Searchables** - Search bars in GUIs
-193. **Separated Leaves** - Performance optimization
-194. **Serene Seasons** - Seasons system
-195. **Simple Copper Pipes** - Fluid transport with copper pipes
-196. **Smooth Scrolling Refurbished** - Smooth scrolling
-197. **Sodium** - Rendering optimization
-198. **Sodium Dynamic Lights** - Dynamic lighting
-199. **Sodium Options API** - API for Sodium options
-200. **Soul Fire'd** - Soul fire improvements
-201. **Sounds** - Sound improvements
-202. **Spawn Animations** - Entity spawn animations
-203. **Stack to Nearby Chests** - Quick stacking
-204. **Status Effect Bars** - Visual effect timers
-205. **Stoneworks** - Stone variants
-206. **Structory** - New structures
-207. **Structory: Towers** - Tower structures
-208. **Subtle Effects** - Subtle visual effects
-209. **Suggestion Tweaker** - Command suggestion improvements
-210. **SuperMartijn642's Config Lib** - Configuration library
-211. **Supplementaries** - Vanilla+ decorations
-212. **Talk Balloons** - Chat bubbles above players
-213. **Tax Free Levels** - No XP cost for anvils
-214. **Tectonic** - Terrain generation
-215. **Terralith** - Overhauled overworld generation
-216. **Tidal Towns** - Ocean structures
-217. **TooltipRareness** - Item rarity borders
-218. **Villager Trading Plus** - Better villager trades
-219. **Traveler's Compass** - Shows coordinates
-220. **Traveler's Backpack** - Backpack with abilities
-221. **Trinkets** - Accessories API
-222. **Trowel** - Path making tool
-223. **TxniLib** - Library mod
-224. **Universal Ores** - Ore processing compatibility
-225. **Vanilla Refresh** - Vanilla texture improvements
-226. **Villager Hats** - Villagers wear profession hats
-227. **Villager Names** - Gives villagers names
-228. **Villages & Pillages** - Village improvements
-229. **Visual Workbench** - Items stay in crafting table
-230. **Visuality** - Visual improvements
-231. **Void Totem** - Saves from void death
-232. **Wakes** - Boat wake effects
-233. **Wavey Capes** - Animated capes
-234. **What Are They Up To (Watut)** - See villager activities
-235. **Withering Heights: Revamped Wither** - Wither boss improvements
-236. **William Wythers' Overhauled Overworld** - Biome and structure overhaul
-237. **YetAnotherConfigLib (YACL)** - Configuration library
-238. **Yeetus Experimentus** - Remove experimental warnings
-239. **YUNG's API** - API for YUNG's mods
+8. **Ambiance** - Environmental sound improvements
+9. **AppleSkin** - Food/hunger-related HUD improvements
+10. **Architectury API** - An intermediary api aimed at easing development of multiplatform mods
+11. **Artifacts** - Adds various powerful items
+12. **Attack Through Grass** - Allows hitting entities through grass
+13. **Auditory Continued** - Updates sounds to be more realistic
+14. **Aurae!** - Mystical particles and ambience
+15. **Balm** - Abstraction Layer (but not really) for Balamod
+16. **Beautified Chat [Client]** - Improves chat appearance on client
+17. **Beautified Chat [Server]** - Improves chat appearance on server
+18. **Better Climbing** - Makes climbing more interactive
+19. **Better Combat** - Improves combat mechanics
+20. **Better Command Block UI** - Enhanced command block interface
+21. **Better Safe Bed** - Prevents monsters from spawning near your bed
+22. **Better Tab** - Enhanced tab list interface
+23. **Better Third Person** - Improves third person camera
+24. **Bedrock Inventory Animations** - Adds Bedrock Edition inventory animations
+25. **Bookshelf** - Library mod for code reuse
+26. **Brainier Bees** - Makes bees smarter
+27. **Concurrent Chunk Management Engine (Fabric)** - Performance improvements for chunk generation
+28. **Camera Utils** - Camera control utilities
+29. **Camera Overhaul** - More immersive camera movements
+30. **Cardinal Components API** - A data attachment API
+31. **Carry On** - Pick up and carry blocks/entities
+32. **Chat Heads** - Adds player heads to chat messages
+33. **Chat Animation [Smooth Chat]** - Smooth chat animations
+34. **Chat Patches** - Various chat improvements
+35. **CICADA** - Client-side animation and display library
+36. **CIT Resewn** - Custom Item Textures support
+37. **Clean Tooltips** - Cleaner item tooltips
+38. **Client Tweaks** - Various client-side tweaks
+39. **Client Sort** - Inventory sorting improvements
+40. **Cloth Config API** - Configuration library for mods
+41. **Clumps** - Groups XP orbs together
+42. **Cobweb** - Framework for building extensible commands
+43. **Collective** - Shared library with common code
+44. **Companion 🐕** - Adds pet companions
+45. **Configuration** - Library for creating config files
+46. **Continuity** - Connected textures support
+47. **Controlling** - Better controls management
+48. **Cool Rain** - Better rain effects
+49. **Copper Rails** - Adds copper rail variants
+50. **CoroUtil** - Utility library
+51. **Craft Saddle** - Adds saddle crafting recipe
+52. **Craftable Nametag** - Adds nametag crafting recipe
+53. **CraftSense** - Shows recipe availability
+54. **Crawl** - Crawling animation
+55. **Creeper Overhaul** - Biome-specific creeper variants
+56. **Crumbling Hearts** - Regeneration only affects last 3 hearts
+57. **Cull Leaves** - Performance optimization for leaves
+58. **Dark Loading Screen** - Darker loading screens
+59. **Deeper and Darker** - New dimension and content
+60. **Ding** - Plays a sound when Minecraft loads
+61. **Do a Barrel Roll** - Elytra tricks and rolls
+62. **Draggable Lists** - Draggable resource/data pack lists
+63. **Dungeons and Taverns** - Adds dungeons and taverns
+64. **Durability Tooltip** - Shows durability in tooltips
+65. **Dynamic FPS** - Reduces FPS when Minecraft is not focused
+66. **Dynamic Surroundings** - Enhanced environmental effects
+67. **Easy Anvils** - Improved anvil mechanics
+68. **Easy Magic** - Easier enchanting
+69. **Enhanced Block Entities** - Performance optimizations for block entities
+70. **Economical Villager Trading** - Improves villager trading
+71. **Effective** - Adds splashes and other effects
+72. **Elytra Slot** - Dedicated elytra slot
+73. **EMI** - Item and recipe viewer
+74. **Enchanted Vertical Slabs** - Craftable vertical slabs
+75. **Enchanting Infuser** - Improved enchanting mechanics
+76. **Enchantment Descriptions** - Adds descriptions to enchantments
+77. **Endercon** - End dimension additions
+78. **[EMF] Entity Model Features** - Custom entity model support
+79. **Entity Pin Cushions** - Shows damage on entities
+80. **Entity Culling** - Stops rendering entities that are not visible
+81. **[ETF] Entity Texture Features** - Custom entity texture support
+82. **Explorify** - Vanilla-style additions
+83. **Explosive Enhancement** - Better explosion effects
+84. **Exposure** - Camera and screenshot improvements
+85. **Exposure: Polaroid** - Instant camera and photos
+86. **Fabric API** - Essential hooks for modding with Fabric
+87. **Fabric Language Kotlin** - Kotlin support for Fabric
+88. **FabricSkyboxes** - Custom skyboxes
+89. **Fadeless** - Removes fade-in animations
+90. **FallingTree** - Makes trees fall when chopped
+91. **Faster Random** - Performance optimization
+92. **FerriteCore** - Memory usage optimizations
+93. **First-person Model** - See your body in first person
+94. **Fishing Real** - Improved fishing mechanics
+95. **Fog** - Fog atmosphere effects
+96. **Food Effect Tooltips** - Shows food effects in tooltips
+97. **Forge Config API Port** - Forge config API for Fabric
+98. **FPS - Display** - Shows FPS in corner
+99. **FrozenLib** - Library for frozen-themed mods
+100. **FSit** - Sit on stairs and slabs
+101. **Fzzy Config** - Configuration library
+102. **Geckolib** - Animation engine for entities
+103. **Gipples Galore** - Glowing nipple creatures
+104. **Gliding** - Improvements to elytra gliding
+105. **GlitchCore** - Library for technical mods
+106. **Handcrafted** - Furniture and decorations
+107. **Hardcore Revival** - Second chance in hardcore
+108. **Harvest with ease** - Right-click to harvest crops
+109. **Hearths** - Cozy resting points
+110. **Held Item Info** - Shows held item information
+111. **Horse Buff** - Improved horses
+112. **iChunUtil** - Utility library
+113. **Toni's Immersive Lanterns** - Better lantern placement
+114. **Immersive UI** - HUD improvements
+115. **ImmersiveThunder** - Realistic thunder sounds
+116. **Improved Village Placement** - Better village generation
+117. **Indium** - Sodium addon compatibility
+118. **Interdimensional Map Markers** - Maps work across dimensions
+119. **Inventory Essentials** - Inventory improvements
+120. **Inventory Totem** - Totems work from inventory
+121. **InvMove** - Move while in inventories
+122. **InvMoveCompats** - Compatibility for InvMove
+123. **Iris Shaders** - Shader support
+124. **Iron Bookshelves** - Enhanced bookshelf storage
+125. **Iron Chests** - Expanded chest storage options
+126. **Item Descriptions** - Adds item descriptions
+127. **Jade 🔍** - Shows information about what you're looking at
+128. **Kiwi 🥝** - Library mod
+129. **KleeSlabs** - Break only half of double slabs
+130. **Konkrete** - Library mod
+131. **Krypton** - Network optimizations
+132. **Larion World Generation** - World generation features
+133. **Leah's Immersive Thunder** - Realistic thunder effects
+134. **Let Me Despawn** - Mobs can despawn properly
+135. **Liberty's Villagers** - Villager improvements
+136. **Lithium** - General-purpose optimizations
+137. **Lithostitched** - Library for worldgen
+138. **Lootr** - Individual loot for each player
+139. **Luna Slimes** - New slime variants
+140. **Magic Mirror** - Teleportation item
+141. **Make Bubbles Pop** - Bubble columns pop bubbles
+142. **MasterCutter** - Stonecutter improvements
+143. **Melody** - Decorative music discs
+144. **MidnightLib** - Library for config screens
+145. **Modern Networking** - Networking library
+146. **Mod Menu** - Adds a mod menu to view installed mods
+147. **Moonlight Lib** - Dynamic assets and registration
+148. **Mouse Tweaks** - Mouse inventory improvements
+149. **M.R.U** - Mineblock's Repeated Utilities
+150. **Mystical Oak Tree** - New tree type
+151. **NetherPortalFix** - Fixes nether portal linking
+152. **Nightosphere** - Sky and atmosphere improvements
+153. **No Animal Tempt Delay** - Removes animal feeding cooldown
+154. **Noisium** - Worldgen performance optimizations
+155. **Northern Compass** - Compass improvements
+156. **Not Enough Animations** - More player animations
+157. **Nuit** - Night effects and ambience
+158. **Nyf's Spiders** - Spider improvements
+159. **OctoLib** - Library for GUI creation
+160. **OmniLib** - Omni-directional library utilities
+161. **Open Loader** - Load resources/data from additional sources
+162. **oωo (owo-lib)** - General utility library
+163. **Packet Fixer** - Fixes packet size issues
+164. **Particle Effects** - Adds particle effects
+165. **Particle Interactions** - Interactive particles
+166. **Particle Rain** - Weather particle effects
+167. **Passive Shield** - Shield improvements
+168. **Peek** - Preview shulker box contents
+169. **Persistent Parrots** - Parrots stay on shoulder
+170. **PetProtect** - Pet protection features
+171. **Pick Up Notifier** - Shows what you pick up
+172. **Ping Wheel** - Quick communication tool
+173. **Text Placeholder API** - Text placeholder support
+174. **playerAnimator** - Animation API
+175. **Pocketwatch** - Time control item
+176. **Polymorph** - Solves recipe conflicts
+177. **Polytone** - Resource pack enhancements
+178. **Prickle** - Sweet berry bush improvements
+179. **Puzzle** - Optimization and QoL features
+180. **Puzzles Lib** - Library for Fuzs mods
+181. **qraftyfied: STRUCTURES** - Structure improvements
+182. **qraftyfied: Industrial Structures** - Industrial-themed structures
+183. **Raised** - Raises HUD elements
+184. **Reacharound** - Place blocks behind blocks
+185. **Realistic Fire Spread** - More realistic fire
+186. **Redstone Pen** - Draw redstone lines
+187. **Reese's Sodium Options** - Better Sodium options screen
+188. **Reimagined Trims** - Better armor trims
+189. **Resourceful Config** - Configuration library
+190. **Resourceful Lib** - General library
+191. **Respawnable Pets** - Pets can respawn
+192. **Ribbits** - Frog improvements
+193. **Scorched** - Nether expansion
+194. **Scribble** - Drawing on blocks
+195. **Sculk Expansion** - More sculk features
+196. **Searchables** - Search bars in GUIs
+197. **Separated Leaves** - Performance optimization
+198. **Serene Seasons** - Seasons system
+199. **Simple Copper Pipes** - Fluid transport with copper pipes
+200. **Smooth Scrolling Refurbished** - Smooth scrolling
+201. **Smooth Swapping** - Smooth item animations
+202. **Sodium** - Rendering optimization
+203. **Sodium Dynamic Lights** - Dynamic lighting
+204. **Sodium Options API** - API for Sodium options
+205. **Soul Fire'd** - Soul fire improvements
+206. **Sounds** - Sound improvements
+207. **Spawn Animations** - Entity spawn animations
+208. **Stack to Nearby Chests** - Quick stacking
+209. **Status Effect Bars** - Visual effect timers
+210. **Stoneworks** - Stone variants
+211. **Structory** - New structures
+212. **Structory: Towers** - Tower structures
+213. **Subtle Effects** - Subtle visual effects
+214. **Suggestion Tweaker** - Command suggestion improvements
+215. **SuperMartijn642's Config Lib** - Configuration library
+216. **Supplementaries** - Vanilla+ decorations
+217. **Talk Balloons** - Chat bubbles above players
+218. **Tax Free Levels** - No XP cost for anvils
+219. **Tidal Towns** - Ocean structures
+220. **TooltipRareness** - Item rarity borders
+221. **Villager Trading Plus** - Better villager trades
+222. **Traveler's Compass** - Shows coordinates
+223. **Traveler's Backpack** - Backpack with abilities
+224. **Trinkets** - Accessories API
+225. **Trowel** - Path making tool
+226. **TxniLib** - Library mod
+227. **Universal Ores** - Ore processing compatibility
+228. **Vanilla Refresh** - Vanilla texture improvements
+229. **Villager Hats** - Villagers wear profession hats
+230. **Villager Names** - Gives villagers names
+231. **Villages & Pillages** - Village improvements
+232. **Visual Workbench** - Items stay in crafting table
+233. **Visuality** - Visual improvements
+234. **Void Totem** - Saves from void death
+235. **Wakes** - Boat wake effects
+236. **Wavey Capes** - Animated capes
+237. **What Are They Up To (Watut)** - See villager activities
+238. **Withering Heights: Revamped Wither** - Wither boss improvements
+239. **YetAnotherConfigLib (YACL)** - Configuration library
+240. **Yeetus Experimentus** - Remove experimental warnings
+241. **YUNG's API** - API for YUNG's mods
 
 ## Resource Packs (23 total)
 
@@ -276,12 +278,9 @@ This document contains a complete alphabetical listing of all mods, resource pac
 1. **BSL Shaders** - Beautiful shader with customization
 2. **Makeup Ultra Fast Shaders** - Performance-focused shaders
 
-## Data Packs (4 total)
+## Data Packs (1 total)
 
-1. **Cliffs and Coves** - Terrain generation features
-2. **Navigable Rivers** - Improved river generation
-3. **Remove Terralith Intro Message** - Removes Terralith welcome message
-4. **Towering Tepuis** - Tepui terrain features
+1. **William Wythers' Overhauled Overworld v2.4.3 (with Larion Fix)** - Biome and structure overhaul compatible with Larion worldgen
 
 ## Configuration Files
 
@@ -298,5 +297,5 @@ This document contains a complete alphabetical listing of all mods, resource pac
 - **Mods**: 239
 - **Resource Packs**: 23
 - **Shader Packs**: 2
-- **Data Packs**: 4
-- **Total**: 268 additions
+- **Data Packs**: 1
+- **Total**: 265 additions

@@ -76,6 +76,9 @@ Quality of life improvements and new mechanics that enhance vanilla gameplay wit
 - **Status Effect Bars** - Visual effect duration timers
 - **Inventory Essentials** - Better inventory management
 - **Better Third Person** - Improved camera controls
+- **Better Tab** - Enhanced tab list interface
+- **Ping Wheel** - Quick communication tool
+- **FPS Display** - Shows current FPS
 
 ### Crafting & Items
 - **Polymorph** - Resolves recipe conflicts
@@ -103,10 +106,8 @@ Quality of life improvements and new mechanics that enhance vanilla gameplay wit
 Massive improvements to world generation while maintaining vanilla feel.
 
 ### Terrain Generation
-- **Terralith** - Complete overworld terrain overhaul
-- **Tectonic** - Mountain and terrain improvements
-- **William Wythers' Overhauled Overworld** - Biome improvements
-- **Geophilic** - Vanilla-style biome enhancements
+- **Larion World Generation** - Optimized terrain generation features
+- **William Wythers' Overhauled Overworld** - Biome improvements with Larion compatibility patch
 
 ### Structures
 - **Structory** & **Structory: Towers** - New adventure structures
@@ -165,10 +166,10 @@ Extensive additions for builders while maintaining vanilla aesthetics.
 Enhanced storage solutions and item transportation.
 
 ### Storage Systems
-- **Reinforced Barrels** - Stronger barrel storage with more capacity
-- **Reinforced Chests** - Enhanced chest storage
-- **Reinforced Shulker Boxes** - Improved shulker box storage
+- **Iron Chests** - Expanded chest storage options
+- **Iron Bookshelves** - Enhanced bookshelf storage
 - **Traveler's Backpack** - Portable storage with special abilities
+- **Stack to Nearby Chests** - Intelligent item organization
 
 ### Item Transport
 - **Simple Copper Pipes** - Fluid and item transport using copper
@@ -197,6 +198,8 @@ Essential support libraries that enable the modpack's features:
 - Cardinal Components, Trinkets, GeckoLib
 - **FrozenLib** - Library for frozen-themed content
 - **OmniLib** - Omni-directional utilities
+- **YACL** - Yet Another Config Lib for mod configurations
+- **Kotlin Language Support** - Enables Kotlin-based mods
 
 ### Configuration
 - **Mod Menu** - Easy mod configuration access
@@ -211,9 +214,25 @@ Visual enhancements through optional resource packs:
 - **Better Textures** - Improved vanilla textures
 - **UI Improvements** - Fonts and interface tweaks
 
+## Philosophy & Design
+
+Layer 1 represents a deliberate approach to modpack design, prioritizing thoughtful curation over raw mod count. Our philosophy centers on:
+
+### Performance-First Architecture
+Rather than accepting performance compromises, Layer 1 starts with aggressive optimization as the foundation. Every visual enhancement and gameplay addition is evaluated against our performance standards, ensuring smooth gameplay on modest hardware.
+
+### Vanilla+ Identity
+We enhance Minecraft's core experience rather than transforming it. Each mod must feel like a natural extension of vanilla mechanics, maintaining the game's essential character while adding depth and polish.
+
+### Server-Conscious Design
+Built and tested on real server constraints (4vCPU/8GB), Layer 1 proves that visual excellence and server performance aren't mutually exclusive. Our worldgen optimization removed conflicting terrain mods while preserving visual quality.
+
+### Legal Distribution Pioneer
+Layer 1's instance system with packwiz bootstrapper demonstrates how modpacks can provide polished experiences while respecting mod authors' distribution preferences.
+
 ## Summary
 
-Layer 1 combines 239 mods, 23 resource packs, 2 shader options, and 4 data packs to create a comprehensive vanilla+ experience. The pack focuses on:
+Layer 1 combines 239 mods, 23 resource packs, 2 shader options, and 1 data pack to create a comprehensive vanilla+ experience. The pack focuses on:
 
 - **Performance First**: Aggressive optimization without visual sacrifice
 - **Visual Polish**: Subtle improvements that enhance without changing Minecraft's identity  
@@ -221,5 +240,6 @@ Layer 1 combines 239 mods, 23 resource packs, 2 shader options, and 4 data packs
 - **Expanded Content**: New structures, biomes, and mechanics that feel vanilla
 - **Builder Friendly**: Extensive decorative options
 - **Multiplayer Ready**: Server optimizations and fair gameplay
+- **Technical Excellence**: Advanced build system and legal distribution model
 
 For complete mod details and credits, see the [full mod list](./MOD_LIST.md).
