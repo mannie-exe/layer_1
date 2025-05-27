@@ -82,19 +82,15 @@ $RECYCLE.BIN/
 # packwiz-installer
 installer/packwiz-installer.jar
 
-# Client/server exports
+# Dist/exports
 dist/client/*
+dist/client/.*
 !dist/client/.gitkeep
 dist/server/*
+dist/server/.*
 !dist/server/.gitkeep
-
-# Launcher exports
 dist/instance/*
-dist/instance/.minecraft
+dist/instance/.*
 !dist/instance/.gitkeep
-
-# CurseForge zip files
 dist/*.zip
-
-# Modrinth modpacks
 dist/*.mrpack
