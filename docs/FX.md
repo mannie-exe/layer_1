@@ -1,17 +1,80 @@
-# Visual Effects Mod Feature Analysis
+# Visual Effects Mod Conflict Resolution
 
-This document analyzes potential feature collisions between visual effects mods in the Layer 1 modpack.
+This document identifies specific conflicts between visual effects mods and provides actionable resolution tasks.
 
-## Analyzed Mods
+## Conflict Analysis Between Core Mods
 
-- **[Aurae](https://github.com/ChorusTeam/Aurae)** (ChorusTeam) - General ambiance enhancement
-- **[Subtle Effects](https://github.com/MincraftEinstein/SubtleEffects)** (MincraftEinstein) - Comprehensive subtle particle and sound effects
-- **[Particle Interactions](https://github.com/Enchanted-Games/block-place-particles)** (Enchanted-Games) - Block interaction particle overhaul
-- **[Effective](https://github.com/Ladysnake/Effective)** (Ladysnake) - Terrain and environmental visual effects
-- **[Particle Effects](https://github.com/LopyMine/particle-effects)** (LopyMine) - Entity effect particle textures
-- **[Visuality](https://github.com/PinkGoosik/visuality)** (PinkGoosik) - Cosmetic particles and mob hit effects
+Based on detailed feature analysis of:
+- **[Subtle Effects](https://github.com/MincraftEinstein/SubtleEffects)** - Comprehensive particle overhaul
+- **[Particle Interactions](https://github.com/Enchanted-Games/block-place-particles)** - Block interaction particles
+- **[Effective](https://github.com/Ladysnake/Effective)** - Water/environment effects
+- **[Visuality](https://github.com/PinkGoosik/visuality)** - Mob/cosmetic particles
+- **[Particle Effects](https://github.com/LopyMine/particle-effects)** - Entity effect textures
+- **[Aurae](https://github.com/ChorusTeam/Aurae)** - General ambiance
 
-## Feature Collision Matrix
+## 🔥 CRITICAL CONFLICTS - Immediate Action Required
+
+### 1. **Campfire/Fire Sparks** 
+- **Subtle Effects**: Sparks from campfires, torches, candles, furnaces, fire
+- **Particle Interactions**: Campfire/fire sparks and embers
+- **Resolution**: Choose one implementation, disable the other
+
+### 2. **Log Stripping Particles**
+- **Subtle Effects**: Log stripping particles
+- **Particle Interactions**: Log stripping particles  
+- **Resolution**: Disable in one mod to avoid duplicates
+
+### 3. **Minecart Sparks**
+- **Subtle Effects**: Minecart sparks
+- **Particle Interactions**: Minecart wheel sparks
+- **Resolution**: Choose preferred implementation
+
+### 4. **Anvil Effects**
+- **Subtle Effects**: Anvil sparks
+- **Particle Interactions**: Anvil/stonecutter item combination sparks
+- **Resolution**: Pick one mod's anvil effects
+
+### 5. **Furnace Particles**
+- **Subtle Effects**: Sparks from furnaces
+- **Particle Interactions**: Smelting furnace ember/spark/smoke particles
+- **Resolution**: Configure to use only one mod's furnace particles
+
+## ⚠️ POTENTIAL CONFLICTS - Test Required
+
+### 6. **Redstone Effects**
+- **Subtle Effects**: Glowstone/redstone dust particles
+- **Particle Interactions**: Redstone dust + redstone interaction particles
+- **Resolution**: Test both, may need to disable redstone particles in one mod
+
+### 7. **Azalea Particles**
+- **Subtle Effects**: Azalea petals
+- **Particle Interactions**: Azalea leaf particles
+- **Resolution**: Test for visual conflicts or overwhelming particle density
+
+### 8. **Leaf Effects**
+- **Subtle Effects**: Leaves decay destroy effects
+- **Particle Interactions**: Multiple leaf types (pine, generic, azalea, cherry)
+- **Resolution**: Test leaf breaking/placement for particle conflicts
+
+## Configuration Recommendations
+
+### Priority Resolution Order
+1. **Test with both mods enabled** first to identify actual runtime conflicts
+2. **If conflicts occur**, prioritize **Subtle Effects** for:
+   - Fire/campfire effects (more comprehensive implementation)
+   - General furnace/anvil/minecart particles  
+3. **Keep Particle Interactions** for:
+   - Unique block-specific particles (snowflakes, cherry petals, etc.)
+   - Specialized interaction particles not covered by Subtle Effects
+
+### Configuration Files
+- `pack/config/subtle_effects/` - Look for campfire, fire, anvil, minecart toggles
+- Particle Interactions config - Disable overlapping effects
+- Both mods offer granular feature toggles for conflict resolution
+
+---
+
+## Original Feature Analysis Matrix
 
 | Feature Category              | [Aurae](https://github.com/ChorusTeam/Aurae) | ❌ [Subtle Effects](https://github.com/MincraftEinstein/SubtleEffects) | ❌ [Particle Interactions](https://github.com/Enchanted-Games/block-place-particles) | [Effective](https://github.com/Ladysnake/Effective) | [Particle Effects](https://github.com/LopyMine/particle-effects) | ❌ [Visuality](https://github.com/PinkGoosik/visuality) |
 | ----------------------------- | -------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------ |
