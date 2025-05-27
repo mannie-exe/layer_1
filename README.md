@@ -1,13 +1,11 @@
 # layer_1 - A Vanilla+ Minecraft Modpack
 
-layer_1 is a carefully curated Fabric modpack that enhances Minecraft while preserving its vanilla essence. With 239 mods focused on performance, visual polish, and quality of life improvements, layer_1 creates the Minecraft experience you always wanted.
+layer_1 is a carefully curated Fabric modpack that enhances Minecraft while preserving its vanilla essence. Built for performance, visual polish, and quality of life improvements, layer_1 creates the Minecraft experience you always wanted.
 
 ## Overview
 
-- **Version**: 0.4.2-alpha
 - **Minecraft**: 1.21.1
 - **Mod Loader**: Fabric 0.16.14
-- **Total Mods**: 240
 - **Focus**: Performance, Visual Enhancement, Quality of Life, Vanilla+
 
 ## Key Features

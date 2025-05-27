@@ -2,7 +2,7 @@
 
 This document contains a complete alphabetical listing of all mods, resource packs, shader packs, and data packs included in the Layer 1 modpack.
 
-## Mods (239 total)
+## Mods (241 total)
 
 1. **3D Skin Layers** - Render the player skin layer in 3D
 2. **A Good Place** - Decorative and utility blocks for building
@@ -28,8 +28,9 @@ This document contains a complete alphabetical listing of all mods, resource pac
 22. **Better Tab** - Enhanced tab list interface
 23. **Better Third Person** - Improves third person camera
 24. **Bedrock Inventory Animations** - Adds Bedrock Edition inventory animations
-25. **Bookshelf** - Library mod for code reuse
-26. **Brainier Bees** - Makes bees smarter
+25. **BlueMap** - Web-based 3D map for servers
+26. **Bookshelf** - Library mod for code reuse
+27. **Brainier Bees** - Makes bees smarter
 27. **Concurrent Chunk Management Engine (Fabric)** - Performance improvements for chunk generation
 28. **Camera Utils** - Camera control utilities
 29. **Camera Overhaul** - More immersive camera movements
@@ -38,7 +39,8 @@ This document contains a complete alphabetical listing of all mods, resource pac
 32. **Chat Heads** - Adds player heads to chat messages
 33. **Chat Animation [Smooth Chat]** - Smooth chat animations
 34. **Chat Patches** - Various chat improvements
-35. **CICADA** - Client-side animation and display library
+35. **Chunky** - Pre-generation tool for world chunks
+36. **CICADA** - Client-side animation and display library
 36. **CIT Resewn** - Custom Item Textures support
 37. **Clean Tooltips** - Cleaner item tooltips
 38. **Client Tweaks** - Various client-side tweaks
@@ -294,8 +296,8 @@ This document contains a complete alphabetical listing of all mods, resource pac
 
 ## Total Content Count
 
-- **Mods**: 239
+- **Mods**: 241
 - **Resource Packs**: 23
 - **Shader Packs**: 2
 - **Data Packs**: 1
-- **Total**: 265 additions
+- **Total**: 267 additions

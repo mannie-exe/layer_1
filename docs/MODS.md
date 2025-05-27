@@ -232,7 +232,7 @@ Layer 1's instance system with packwiz bootstrapper demonstrates how modpacks ca
 
 ## Summary
 
-Layer 1 combines 239 mods, 23 resource packs, 2 shader options, and 1 data pack to create a comprehensive vanilla+ experience. The pack focuses on:
+Layer 1 combines 241 mods, 23 resource packs, 2 shader options, and 1 data pack to create a comprehensive vanilla+ experience. The pack focuses on:
 
 - **Performance First**: Aggressive optimization without visual sacrifice
 - **Visual Polish**: Subtle improvements that enhance without changing Minecraft's identity  
