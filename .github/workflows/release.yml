@@ -23,10 +23,8 @@ jobs:
       - name: Get Pack Version
         id: version
         uses: ./.github/actions/get-version
-      - name: Build Modrinth export
-        run: ./make.sh mrpack
-      - name: Build instance export
-        run: ./make.sh instance
+      - name: Build
+        run: ./make.sh all
 
       - name: Generate checksums
         run: |

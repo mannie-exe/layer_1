@@ -25,37 +25,66 @@ This guide covers the complete development setup, build system, and testing proc
 git clone https://github.com/mannie-exe/layer_1.git
 cd layer_1
 
+# Show all available build targets
+./make.sh help
+
 # Build modpack file (for distribution)
 ./make.sh mrpack
 
 # Build instance zip (includes custom icon + bootstrapper)
 ./make.sh instance
 
-# Build everything for release
+# Clean build directories
+./make.sh clean
+
+# Build everything for release (mrpack + instance)
 ./make.sh all
+
+# Build multiple targets (automatically sorted by priority)
+./make.sh clean mrpack instance
 ```
 
 ## Build System
 
 layer_1 uses a streamlined build system built on top of [packwiz](https://github.com/packwiz/packwiz):
 
-- **`make.sh`** - Main build script with multiple targets
+- **`make.sh`** - Main build script with multiple targets and comprehensive help
 - **`man.sh`** - Quick pack export script  
 - **Automated CI/CD** - GitHub Actions handle releases
 - **Clean separation** - All build artifacts organized in `dist/`
 
-### Primary Build Targets
+### Build Targets
 
-- **`mrpack`** - Create Modrinth-compatible modpack file
-- **`instance`** - Build launcher instance with custom icon and bootstrapper
-- **`clean`** - Clean build directories
-- **`all`** - Build both mrpack and instance for release
+The build system supports multiple targets that can be combined and are automatically sorted by execution priority:
+
+| Target | Description |
+|--------|-------------|
+| **`clean`** | Clean the dist (build) directories |
+| **`mrpack`** | Build a Modrinth-compatible '*.mrpack' file |
+| **`instance`** | Build a launcher-importable instance; uses packwiz-installer instead of embedding mods |
+| **`server`** | Build a non-redistributable server (⚠️ embeds non-redistributable content) |
+| **`client`** | Build a non-redistributable client (⚠️ embeds non-redistributable content) |
+| **`all`** | Equivalent to 'mrpack instance' |
+
+### Advanced Usage
+
+```bash
+# Multiple targets (auto-sorted by execution priority)
+./make.sh instance server     # Builds instance first, then server
+./make.sh clean mrpack        # Cleans first, then builds mrpack
+./make.sh server instance     # Automatically sorts to: instance, server
+
+# Help and target information
+./make.sh help               # Show usage and all available targets
+./make.sh                    # Same as help (no arguments)
+```
 
 ### Distribution Flow
 
 ```bash
 ./make.sh mrpack     # → dist/layer_1-v0.4.2-alpha.mrpack
 ./make.sh instance   # → dist/layer_1-v0.4.2-alpha.zip
+./make.sh all        # → Both files above
 ```
 
 The instance build automatically includes the packwiz bootstrapper, allowing for one-click mod installation while preserving custom icons and configs.
@@ -143,7 +172,9 @@ layer_1/
 │   ├── resourcepacks/      # Resource pack definitions
 │   ├── shaderpacks/        # Shader pack definitions
 │   └── pack.toml           # Main pack configuration
-├── instance-template/       # Instance template files
+├── templates/              # Template files
+│   ├── instance/           # Instance template files (launcher configs, icon)
+│   └── server/             # Server template files (server.properties, etc.)
 ├── installer/              # Packwiz installer
 ├── dist/                   # Build outputs (generated)
 ├── make.sh                 # Main build script
