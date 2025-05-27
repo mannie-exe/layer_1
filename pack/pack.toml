@@ -1,6 +1,6 @@
 name = "layer_1"
 author = "mannie-exe"
-version = "0.4.4-alpha"
+version = "0.4.5-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]
