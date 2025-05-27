@@ -54,8 +54,8 @@ layer_1 uses a streamlined build system built on top of [packwiz](https://github
 ### Distribution Flow
 
 ```bash
-./make.sh mrpack     # → dist/layer_1-v0.4.1-alpha.mrpack
-./make.sh instance   # → dist/layer_1-v0.4.1-alpha.zip
+./make.sh mrpack     # → dist/layer_1-v0.4.2-alpha.mrpack
+./make.sh instance   # → dist/layer_1-v0.4.2-alpha.zip
 ```
 
 The instance build automatically includes the packwiz bootstrapper, allowing for one-click mod installation while preserving custom icons and configs.

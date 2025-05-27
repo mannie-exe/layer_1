@@ -4,7 +4,7 @@ layer_1 is a carefully curated Fabric modpack that enhances Minecraft while pres
 
 ## Overview
 
-- **Version**: 0.4.1-alpha
+- **Version**: 0.4.2-alpha
 - **Minecraft**: 1.21.1
 - **Mod Loader**: Fabric 0.16.14
 - **Total Mods**: 240
