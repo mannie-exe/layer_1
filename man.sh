@@ -60,7 +60,7 @@ function list_sided_mods() {
   done
 
   # Clear progress line and show results w/ summary at the bottom
-  printf "\r"
+  printf "\r\033[K"
   for MOD in "${MODS[@]}"; do
     echo "$MOD"
   done
