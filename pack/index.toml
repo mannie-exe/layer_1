@@ -2310,6 +2310,10 @@ file = "shaderpacks/BSL_v10.0.zip.txt"
 hash = "abab9000c6b0e4837edf3552adf1e8970c92c1233c9de8feaef531585c3f3902"
 
 [[files]]
+file = "shaderpacks/MakeUp-UltraFast-9.1e.zip.txt"
+hash = "1aef87a060871e47ff776ba5e2b7d1dc8820d4b87f5ba9bb8328b7fad25905f4"
+
+[[files]]
 file = "shaderpacks/bsl-shaders.pw.toml"
 hash = "d30923bf5cfb4988a372508cb461d8077609d79a38d0b170785804c7ad15f16e"
 metafile = true
