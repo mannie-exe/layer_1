@@ -76,21 +76,28 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,windows
 
+### Custom ###
+
 # Claude
 .claude
 
 # packwiz-installer
 installer/packwiz-installer.jar
 
-# Dist/exports
+# Builds
 dist/client/*
 dist/client/.*
 !dist/client/.gitkeep
+dist/client-full/*
+dist/client-full/.*
+!dist/client-full/.gitkeep
 dist/server/*
 dist/server/.*
 !dist/server/.gitkeep
-dist/instance/*
-dist/instance/.*
-!dist/instance/.gitkeep
+dist/server-full/*
+dist/server-full/.*
+!dist/server-full/.gitkeep
 dist/*.zip
 dist/*.mrpack
+
+# End of Custom

@@ -23,13 +23,13 @@ jobs:
       - name: Get Pack Version
         id: version
         uses: ./.github/actions/get-version
-      - name: Build
+      - name: Build Pack (./make.sh mrpack client server)
         run: ./make.sh all
 
       - name: Generate checksums
         run: |
           cd dist
-          sha256sum layer_1-v*.mrpack layer_1-v*.zip >> checksums.txt
+          sha256sum layer_1-v*.mrpack layer_1-v*-client.zip layer_1-v*-server.zip >> checksums.txt
           cat checksums.txt
 
       - name: Create Release
@@ -46,12 +46,19 @@ jobs:
 
             #### 🚀 Downloads
             - **Modpack**: `layer_1-v${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
-            - **Instance**: `layer_1-v${{ steps.version.outputs.VERSION }}.zip` - Launcher zip with custom icon
+            - **Client**: `layer_1-v${{ steps.version.outputs.VERSION }}-client.zip` - Bootstrapped client installer
+            - **Server**: `layer_1-v${{ steps.version.outputs.VERSION }}-server.zip` - Bootstrapped server installer
 
             #### 🎮 Quick Start
-            1. Download either the `.mrpack` or `.zip` file
+            **For Players:**
+            1. Download the `.mrpack` for one-click import OR the `-client.zip` for custom launcher setup
             2. Import into your launcher (Prism, MultiMC, etc.)
             3. Launch and play!
+            
+            **For Server Operators:**
+            1. Download the `-server.zip` file
+            2. Extract and run `./install_pack.sh` to set up the server
+            3. Start your server with the generated files
 
             #### 🔐 Checksums
             See `checksums.txt` for SHA256 verification
@@ -62,5 +69,6 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: |
             dist/layer_1-v${{ steps.version.outputs.VERSION }}.mrpack
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}.zip
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}-client.zip
+            dist/layer_1-v${{ steps.version.outputs.VERSION }}-server.zip
             dist/checksums.txt

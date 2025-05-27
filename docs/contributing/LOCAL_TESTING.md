@@ -44,6 +44,41 @@ cd layer_1
 ./make.sh clean mrpack instance
 ```
 
+## Pack Configuration Source of Truth
+
+The `pack/pack.toml` file serves as the **single source of truth** for all modpack metadata and configuration. This file drives the entire build system:
+
+```toml
+name = "layer_1"                    # Pack name - used in filenames and templates
+author = "mannie-exe"               # Pack author - used in launcher configs  
+version = "0.4.4-alpha"             # Pack version - used in all build artifacts
+pack-format = "packwiz:1.1.0"       # Packwiz format version
+
+[versions]
+fabric = "0.16.14"                  # Fabric loader version
+minecraft = "1.21.1"                # Target Minecraft version
+```
+
+### Build System Integration
+
+The following scripts automatically extract and use values from `pack/pack.toml`:
+
+- **`make.sh`** - Main build script uses ALL metadata for artifact generation
+- **`release.sh`** - Uses version for git tagging and releases  
+- **`man.sh`** - Uses name and version for quick exports
+- **Template processing** - All `*.template` files support variable substitution:
+  - `{{NAME}}` - Pack name
+  - `{{AUTHOR}}` - Pack author
+  - `{{VERSION}}` - Pack version
+  - `{{MC_VERSION}}` - Minecraft version
+  - `{{FABRIC_VERSION}}` - Fabric loader version
+
+### Mod Loader Support
+
+Currently **Fabric only** - the build system is designed specifically for Fabric modpacks. 
+
+🚧 **Future planned support**: Quilt and NeoForge
+
 ## Build System
 
 layer_1 uses a streamlined build system built on top of [packwiz](https://github.com/packwiz/packwiz):
@@ -57,14 +92,15 @@ layer_1 uses a streamlined build system built on top of [packwiz](https://github
 
 The build system supports multiple targets that can be combined and are automatically sorted by execution priority:
 
-| Target | Description |
-|--------|-------------|
+| Command | Description |
+|---------|-------------|
 | **`clean`** | Clean the dist (build) directories |
 | **`mrpack`** | Build a Modrinth-compatible '*.mrpack' file |
-| **`instance`** | Build a launcher-importable instance; uses packwiz-installer instead of embedding mods |
-| **`server`** | Build a non-redistributable server (⚠️ embeds non-redistributable content) |
-| **`client`** | Build a non-redistributable client (⚠️ embeds non-redistributable content) |
-| **`all`** | Equivalent to 'mrpack instance' |
+| **`client`** | Build a bootstrapped client installer |
+| **`server`** | Build a bootstrapped server installer |
+| **`client-full`** | Build a non-redistributable client (⚠️ embeds non-redistributable content) |
+| **`server-full`** | Build a non-redistributable server (⚠️ embeds non-redistributable content) |
+| **`all`** | Equivalent to 'mrpack client server' |
 
 ### Advanced Usage
 
