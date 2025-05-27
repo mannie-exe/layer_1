@@ -114,6 +114,10 @@ hash = "151cb9f1ab722aa7026701e482e77cb13eeef2ce7c77cfbac997f719a81b1dbb"
 preserve = true
 
 [[files]]
+file = "config/bluemap/core.conf"
+hash = "073c47bb0e7a146b8e7b9a5156777df0c43b4b6e3ad7da201f330b70183cfcc9"
+
+[[files]]
 file = "config/brainierbees.properties"
 hash = "c6f9def940add188b7d8eb68c09da0591ada334aa55e4b24a046e08d8e768ea6"
 
@@ -1099,6 +1103,11 @@ metafile = true
 [[files]]
 file = "mods/bia.pw.toml"
 hash = "4ce89d53bd5f425d89b70322e77f87a2026b95e6854dc8a076cc19333115a813"
+metafile = true
+
+[[files]]
+file = "mods/bluemap.pw.toml"
+hash = "0fab2a26e6692d71537da9565dd87137504ddb34653136fd9f7a7df084d47575"
 metafile = true
 
 [[files]]
