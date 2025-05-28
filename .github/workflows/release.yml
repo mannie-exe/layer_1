@@ -17,19 +17,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Packwiz Environment
-        uses: ./.github/actions/setup-packwiz
+      - name: Setup empack Environment
+        uses: ./.github/actions/setup-empack
 
-      - name: Get Pack Version
-        id: version
-        uses: ./.github/actions/get-version
-      - name: Build Pack (./make.sh mrpack client server)
-        run: ./make.sh all
+      - name: Get Pack Info
+        id: pack
+        uses: ./.github/actions/get-empack-info
+      - name: Build Pack (./empack mrpack client server)
+        run: ./empack all
 
       - name: Generate checksums
         run: |
           cd dist
-          sha256sum layer_1-v*.mrpack layer_1-v*-client.zip layer_1-v*-server.zip >> checksums.txt
+          sha256sum ${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}.mrpack ${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-client.zip ${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-server.zip >> checksums.txt
           cat checksums.txt
 
       - name: Create Release
@@ -37,24 +37,26 @@ jobs:
         uses: shogo82148/actions-create-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          release_name: v${{ steps.version.outputs.VERSION }}
+          release_name: v${{ steps.pack.outputs.VERSION }}
           draft: true
           prerelease: false
           body: |
-            ## layer_1
-            ### v${{ steps.version.outputs.VERSION }}
+            ## ${{ steps.pack.outputs.NAME }}
+            ### v${{ steps.pack.outputs.VERSION }}
+
+            *by ${{ steps.pack.outputs.AUTHOR }}*
 
             #### 🚀 Downloads
-            - **Modpack**: `layer_1-v${{ steps.version.outputs.VERSION }}.mrpack` - One-click launcher import
-            - **Client**: `layer_1-v${{ steps.version.outputs.VERSION }}-client.zip` - Bootstrapped client installer
-            - **Server**: `layer_1-v${{ steps.version.outputs.VERSION }}-server.zip` - Bootstrapped server installer
+            - **Modpack**: `${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}.mrpack` - One-click launcher import
+            - **Client**: `${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-client.zip` - Bootstrapped client installer
+            - **Server**: `${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-server.zip` - Bootstrapped server installer
 
             #### 🎮 Quick Start
             **For Players:**
             1. Download the `.mrpack` for one-click import OR the `-client.zip` for custom launcher setup
             2. Import into your launcher (Prism, MultiMC, etc.)
             3. Launch and play!
-            
+
             **For Server Operators:**
             1. Download the `-server.zip` file
             2. Extract and run `./install_pack.sh` to set up the server
@@ -68,7 +70,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: |
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}.mrpack
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}-client.zip
-            dist/layer_1-v${{ steps.version.outputs.VERSION }}-server.zip
+            dist/${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}.mrpack
+            dist/${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-client.zip
+            dist/${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-server.zip
             dist/checksums.txt

@@ -64,10 +64,17 @@ Extensive decorative options through Supplementaries, Handcrafted, and more - pe
 ## Contributing
 
 Contributions are welcome! Please:
-1. Check existing issues before submitting new ones
-2. Test changes thoroughly
-3. Follow the existing mod curation philosophy
-4. Update documentation as needed
+1. **Read [Local Testing Guide](docs/contributing/LOCAL_TESTING.md)** first for complete development setup
+2. **Review existing documentation** to understand our direction and curation philosophy:
+   - [Mod Overview](docs/MODS.md) - Our current mod selection and reasoning
+   - [Development Plans](docs/PLAN.md) - Future roadmap and architectural decisions
+   - [Visual Effects Analysis](docs/FX.md) - Technical compatibility considerations
+3. Check existing issues before submitting new ones
+4. Test changes thoroughly
+5. Follow the existing mod curation philosophy
+6. Update documentation as needed
+
+**Note**: This repository requires several development tools (packwiz, tq, mrpack-install) - see the contributing guide for installation instructions before cloning.
 
 ## License
 

@@ -4,7 +4,8 @@ on:
   pull_request:
     paths:
       - 'pack/**'
-      - 'make.sh'
+      - 'empack'
+      - 'man'
       - '.github/workflows/validate.yml'
   workflow_dispatch:
 
@@ -17,23 +18,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Packwiz Environment
-        uses: ./.github/actions/setup-packwiz
-
-      - name: Refresh pack index
-        run: packwiz --pack-file pack/pack.toml refresh
+      - name: Setup empack Environment
+        uses: ./.github/actions/setup-empack
 
       - name: List all mods
-        run: |
-          echo "## All Mods"
-          packwiz --pack-file pack/pack.toml list
+        run: ./man list:mods
 
       - name: List client-side mods
-        run: |
-          echo "## Client-side Mods"
-          packwiz --pack-file pack/pack.toml list --side client
+        run: ./man list:mods:client
 
       - name: List server-side mods
-        run: |
-          echo "## Server-side Mods"
-          packwiz --pack-file pack/pack.toml list --side server
+        run: ./man list:mods:server

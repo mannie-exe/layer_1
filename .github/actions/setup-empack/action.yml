@@ -1,0 +1,41 @@
+name: 'Setup empack Environment'
+description: 'Install all dependencies required for empack build system (Java, packwiz, tq, mrpack-install)'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+    
+    - name: Setup Packwiz
+      uses: ./.github/actions/setup-packwiz
+    
+    - name: Setup tq
+      uses: ./.github/actions/setup-tq
+    
+    - name: Setup mrpack-install
+      uses: ./.github/actions/setup-mrpack-install
+    
+    - name: Verify installations
+      shell: bash
+      run: |
+        echo "✅ Verifying empack environment setup..."
+        echo "Java version:"
+        java --version
+        echo ""
+        echo "Go version:"
+        go version
+        echo ""
+        echo "Packwiz version:"
+        go version -m $(which packwiz) | head -n 3 | tail -n 1 | awk '{print $3}'
+        echo ""
+        echo "tq version:"
+        tq --version
+        echo ""
+        echo "mrpack-install version:"
+        mrpack-install --version
+        echo ""
+        echo "🚀 empack environment ready!"

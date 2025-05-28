@@ -1,0 +1,12 @@
+name: 'Setup tq (TOML Query)'
+description: 'Install tq (TOML query tool) for pack.toml parsing'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Rust
+      uses: dtolnay/rust-toolchain@stable
+    
+    - name: Install tq
+      shell: bash
+      run: cargo install tomlq

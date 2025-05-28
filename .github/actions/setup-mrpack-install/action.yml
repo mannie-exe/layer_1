@@ -1,0 +1,88 @@
+name: 'Setup mrpack-install'
+description: 'Install mrpack-install for server installation automation'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Install mrpack-install
+      shell: bash
+      run: |
+        # Detect platform - GitHub Actions provides RUNNER_OS
+        case "$RUNNER_OS" in
+          Linux)
+            ARCH=$(uname -m)
+            case "$ARCH" in
+              x86_64)
+                BINARY="mrpack-install-linux"
+                ;;
+              aarch64|arm64)
+                BINARY="mrpack-install-linux-arm64"
+                ;;
+              *)
+                echo "Unsupported Linux architecture: $ARCH"
+                exit 1
+                ;;
+            esac
+            INSTALL_DIR="/usr/local/bin"
+            BINARY_NAME="mrpack-install"
+            USE_SUDO=true
+            ;;
+          macOS)
+            ARCH=$(uname -m)
+            case "$ARCH" in
+              x86_64)
+                BINARY="mrpack-install-darwin"
+                ;;
+              arm64)
+                BINARY="mrpack-install-darwin-arm64"
+                ;;
+              *)
+                echo "Unsupported macOS architecture: $ARCH"
+                exit 1
+                ;;
+            esac
+            INSTALL_DIR="/usr/local/bin"
+            BINARY_NAME="mrpack-install"
+            USE_SUDO=true
+            ;;
+          Windows)
+            BINARY="mrpack-install-windows.exe"
+            # Use a directory that's already in PATH on Windows runners
+            INSTALL_DIR="$HOME/bin"
+            BINARY_NAME="mrpack-install.exe"
+            USE_SUDO=false
+            ;;
+          *)
+            echo "Unsupported runner OS: $RUNNER_OS"
+            exit 1
+            ;;
+        esac
+        
+        echo "Downloading $BINARY for $RUNNER_OS..."
+        
+        # Create install directory if it doesn't exist
+        mkdir -p "$INSTALL_DIR"
+        
+        # Download the binary
+        if command -v wget >/dev/null 2>&1; then
+          wget -q "https://github.com/nothub/mrpack-install/releases/latest/download/$BINARY" -O "$BINARY_NAME"
+        elif command -v curl >/dev/null 2>&1; then
+          curl -sL "https://github.com/nothub/mrpack-install/releases/latest/download/$BINARY" -o "$BINARY_NAME"
+        else
+          echo "Neither wget nor curl is available"
+          exit 1
+        fi
+        
+        # Make executable and install
+        chmod +x "$BINARY_NAME"
+        
+        if [ "$USE_SUDO" = true ]; then
+          sudo mv "$BINARY_NAME" "$INSTALL_DIR/"
+        else
+          mv "$BINARY_NAME" "$INSTALL_DIR/"
+          # Add to PATH for Windows
+          echo "$INSTALL_DIR" >> $GITHUB_PATH
+        fi
+        
+        echo "Installed mrpack-install successfully"
+        mrpack-install --version

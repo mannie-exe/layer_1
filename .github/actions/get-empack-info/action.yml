@@ -1,0 +1,54 @@
+name: 'Get empack Info'
+description: 'Extract pack information (name, version, author) from pack.toml'
+
+inputs:
+  fields:
+    description: 'Comma-separated fields to extract (name,version,author) or "all" for everything'
+    required: false
+    default: 'all'
+
+outputs:
+  name:
+    description: 'The name from pack.toml'
+    value: ${{ steps.info.outputs.NAME }}
+  version:
+    description: 'The version from pack.toml'
+    value: ${{ steps.info.outputs.VERSION }}
+  author:
+    description: 'The author from pack.toml'
+    value: ${{ steps.info.outputs.AUTHOR }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Extract pack information from pack.toml
+      id: info
+      shell: bash
+      run: |
+        FIELDS="${{ inputs.fields }}"
+        PACK_FILE="pack/pack.toml"
+        
+        # Function to extract and clean field
+        extract_field() {
+          local field="$1"
+          tq -f "$PACK_FILE" "$field" | sed 's/"//g'
+        }
+        
+        # Extract requested fields (default: all)
+        if [[ "$FIELDS" == "all" || "$FIELDS" == *"name"* ]]; then
+          NAME=$(extract_field 'name')
+          echo "NAME=$NAME" >> $GITHUB_OUTPUT
+          echo "Pack name: $NAME"
+        fi
+        
+        if [[ "$FIELDS" == "all" || "$FIELDS" == *"version"* ]]; then
+          VERSION=$(extract_field 'version')
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "Pack version: $VERSION"
+        fi
+        
+        if [[ "$FIELDS" == "all" || "$FIELDS" == *"author"* ]]; then
+          AUTHOR=$(extract_field 'author')
+          echo "AUTHOR=$AUTHOR" >> $GITHUB_OUTPUT
+          echo "Pack author: $AUTHOR"
+        fi
