@@ -53,14 +53,16 @@ jobs:
 
             #### 🎮 Quick Start
             **For Players:**
-            1. Download the `.mrpack` for one-click import OR the `-client.zip` for custom launcher setup
+            1. Download the `${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}.mrpack` for one-click import OR the `-client.zip` for custom launcher setup
             2. Import into your launcher (Prism, MultiMC, etc.)
             3. Launch and play!
 
             **For Server Operators:**
-            1. Download the `-server.zip` file
+            1. Download the `${{ steps.pack.outputs.NAME }}-v${{ steps.pack.outputs.VERSION }}-server.zip` file
             2. Extract and run `./install_pack.sh` to set up the server
             3. Start your server with the generated files
+            4. Accept the EULA
+            5. Launch and play!
 
             #### 🔐 Checksums
             See `checksums.txt` for SHA256 verification
